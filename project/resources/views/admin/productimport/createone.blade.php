@@ -121,7 +121,7 @@
 									</div>
 								</div>
 
-								<div class="row">
+								<!-- <div class="row">
 									<div class="col-lg-12">
 										<div class="left-area">
 											<h4 class="heading">{{ __("Child Category") }}*</h4>
@@ -132,7 +132,47 @@
 											<option value="">{{ __("Select Child Category") }}</option>
 										</select>
 									</div>
-								</div>
+								</div> -->
+
+								<div class="row">
+										<div class="col-lg-12">
+											<div class="left-area">
+												<h4 class="heading">{{ __("Child 1 Category") }}*</h4>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<select id="childcat" name="childcategory_id" disabled="">
+												<option value="">{{ __("Select Child 1 Category") }}</option>
+											</select>
+										</div>
+									</div>
+
+
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="left-area">
+												<h4 class="heading">{{ __('Child 2 Category') }}*</h4>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<select id="subchildcat" name="subchildcategory_id" disabled="">
+												<option value="">{{ __(' Select Child 2 Category') }}</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="left-area">
+												<h4 class="heading">{{ __('Child 3 Category') }}*</h4>
+											</div>
+										</div>
+										<div class="col-lg-12">
+											<select id="childchildcat" name="childchildcategory_id" disabled="">
+												<option value="">{{ __(' Select Child 3 Category') }}</option>
+											</select>
+										</div>
+									</div>
 
 						
 								<div class="row" id="stckprod">
