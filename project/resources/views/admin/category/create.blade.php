@@ -83,13 +83,77 @@
                                 <div class="img-upload full-width-img">
                                   <div id="image-preview" class="img-preview" style="background: url({{ asset('assets/admin/images/upload.png') }});">
                                     <label for="image-upload" class="img-label"><i class="icofont-upload-alt"></i>{{ __('Upload Banner') }}</label>
-                                    <input type="file" name="image" class="img-upload">
+                                    <input type="file" name="home_slider" class="img-upload">
                                   </div>
                                   <p class="text">{{__('Prefered Size: (1230x267) or Square Sized Image')}}</p>
                                 </div>
                               </div>
                             </div>
+                            <div class="row">
 
+													<div class="col-lg-4">
+
+														<div class="left-area">
+
+														</div>
+
+													</div>
+
+													<div class="col-lg-7">
+
+							              <div class="checkbox-wrapper">
+
+							                <input type="checkbox" name="is_featured" class="checkclick" id="is_featured" value="1">
+
+							                <label for="is_featured">{{ __('Allow Featured Category') }}</label>
+
+							              </div>
+
+
+
+													</div>
+
+												</div>
+
+
+
+						            <div class="showbox">
+
+
+
+                          <div class="row">
+
+                            <div class="col-lg-4">
+
+                              <div class="left-area">
+
+                                <h4 class="heading">{{ __('Set Feature Image') }} *</h4>
+
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-7">
+
+                              <div class="img-upload">
+
+                                <div id="image-preview" class="img-preview" style="background: url({{ asset('assets/admin/images/upload.png') }});">
+
+                                  <label for="image-upload" class="img-label"><i class="icofont-upload-alt"></i>{{ __('Upload Image') }}</label>
+
+                                  <input type="file" name="image" class="img-upload">
+
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+
+
+						            </div>
 
 
                           <br>

@@ -51,14 +51,14 @@ class CategoryController extends AdminBaseController
         $rules = [
             'photo' => 'mimes:jpeg,jpg,png,svg',
             'slug' => 'unique:categories|regex:/^[a-zA-Z0-9\s-]+$/',
-            'image' => 'required|mimes:jpeg,jpg,png,svg'
+            'home_slider' => 'required|mimes:jpeg,jpg,png,svg'
                  ];
         $customs = [
             'photo.mimes' => __('Icon Type is Invalid.'),
             'slug.unique' => __('This slug has already been taken.'),
             'slug.regex' => __('Slug Must Not Have Any Special Characters.'),
-            'image.required' => __('Banner Image is required.'),
-            'image.mimes' => __('Banner Image Type is Invalid.')
+            'home_slider.required' => __('Banner Image is required.'),
+            'home_slider.mimes' => __('Banner Image Type is Invalid.')
                    ];
         $validator = Validator::make($request->all(), $rules, $customs);
 
@@ -76,13 +76,38 @@ class CategoryController extends AdminBaseController
             $file->move('assets/images/categories',$name);
             $input['photo'] = $name;
         }
-        if ($file = $request->file('image'))
+        if ($file = $request->file('home_slider'))
         {
             $name = \PriceHelper::ImageCreateName($file);
             $file->move('assets/images/categories',$name);
-            $input['image'] = $name;
+            $input['home_slider'] = $name;
         }
+        if (!isset($request->is_featured)){
+            $input['is_featured'] = 0;
+        }
+        else {
+            $input['is_featured'] = 1;
+            //--- Validation Section
+            $rules = [
+                'image' => 'required|mimes:jpeg,jpg,png,svg'
+                    ];
+            $customs = [
+                'image.required' => 'Feature Image is required.',
+                'image.mimes' => 'Feature Image Type is Invalid.'
+                    ];
+            $validator = Validator::make($request->all(), $rules, $customs);
 
+            if ($validator->fails()) {
+            return response()->json(array('errors' => $validator->getMessageBag()->toArray()));
+            }
+            //--- Validation Section Ends
+            if ($file = $request->file('image'))
+            {
+                $name = \PriceHelper::ImageCreateName($file);
+                $file->move('assets/images/categories',$name);
+                $input['image'] = $name;
+            }
+        }
         $data->fill($input)->save();
         //--- Logic Section Ends
 
@@ -106,13 +131,13 @@ class CategoryController extends AdminBaseController
         $rules = [
         	'photo' => 'mimes:jpeg,jpg,png,svg',
             'slug' => 'unique:categories,slug,'.$id.'|regex:/^[a-zA-Z0-9\s-]+$/',
-            'image' => 'mimes:jpeg,jpg,png,svg'
+            'home_slider' => 'mimes:jpeg,jpg,png,svg'
         		 ];
         $customs = [
             'photo.mimes' => __('Icon Type is Invalid.'),
             'slug.unique' => __('This slug has already been taken.'),
             'slug.regex' => __('Slug Must Not Have Any Special Characters.'),
-            'image.mimes' => __('Banner Image Type is Invalid.')
+            'home_slider.mimes' => __('Banner Image Type is Invalid.')
         		   ];
         $validator = Validator::make($request->all(), $rules, $customs);
 
@@ -136,13 +161,38 @@ class CategoryController extends AdminBaseController
                 }
             $input['photo'] = $name;
             }
-            if ($file = $request->file('image'))
+            if ($file = $request->file('home_slider'))
             {
                 $name = \PriceHelper::ImageCreateName($file);
                 $file->move('assets/images/categories',$name);
-                $input['image'] = $name;
+                $input['home_slider'] = $name;
             }
-
+            if (!isset($request->is_featured)){
+                $input['is_featured'] = 0;
+            }
+            else {
+                $input['is_featured'] = 1;
+                //--- Validation Section
+                $rules = [
+                    'image' => 'required|mimes:jpeg,jpg,png,svg'
+                        ];
+                $customs = [
+                    'image.required' => 'Feature Image is required.',
+                    'image.mimes' => 'Feature Image Type is Invalid.'
+                        ];
+                $validator = Validator::make($request->all(), $rules, $customs);
+    
+                if ($validator->fails()) {
+                return response()->json(array('errors' => $validator->getMessageBag()->toArray()));
+                }
+                //--- Validation Section Ends
+                if ($file = $request->file('image'))
+                {
+                    $name = \PriceHelper::ImageCreateName($file);
+                    $file->move('assets/images/categories',$name);
+                    $input['image'] = $name;
+                }
+            }
 
         $data->update($input);
         //--- Logic Section Ends

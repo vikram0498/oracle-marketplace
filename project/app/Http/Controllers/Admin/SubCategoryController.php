@@ -36,10 +36,16 @@ class SubCategoryController extends AdminBaseController
 
                                 return $buttons;
                             })
+                            ->addColumn('popular', function(Subcategory $data) {
+                                $class = $data->is_popular == 1 ? 'drop-success' : 'drop-danger';
+                                $s = $data->is_popular == 1 ? 'selected' : '';
+                                $ns = $data->is_popular == 0 ? 'selected' : '';
+                                return '<div class="action-list"><select class="process select droplinks '.$class.'"><option data-val="1" value="'. route('admin-subcat-popular',['id1' => $data->id, 'id2' => 1]).'" '.$s.'>Yes</option><<option data-val="0" value="'. route('admin-subcat-popular',['id1' => $data->id, 'id2' => 0]).'" '.$ns.'>No</option>/select></div>';
+                            })
                             ->addColumn('action', function(Subcategory $data) {
                                 return '<div class="action-list"><a data-href="' . route('admin-subcat-edit',$data->id) . '" class="edit" data-toggle="modal" data-target="#modal1"> <i class="fas fa-edit"></i>'.__('Edit').'</a><a href="javascript:;" data-href="' . route('admin-subcat-delete',$data->id) . '" data-toggle="modal" data-target="#confirm-delete" class="delete"><i class="fas fa-trash-alt"></i></a></div>';
                             })
-                            ->rawColumns(['status','attributes','action'])
+                            ->rawColumns(['status','attributes', 'popular', 'action'])
                             ->toJson(); //--- Returning Json Data To Client Side
     }
 
@@ -59,11 +65,14 @@ class SubCategoryController extends AdminBaseController
     {
         //--- Validation Section
         $rules = [
-            'slug' => 'unique:subcategories|regex:/^[a-zA-Z0-9\s-]+$/'
+            'slug' => 'unique:subcategories|regex:/^[a-zA-Z0-9\s-]+$/',
+            'photo' => 'required|mimes:jpeg,jpg,png,svg'
                  ];
         $customs = [
-            'slug.unique' => __('This slug has already been taken.'),
-            'slug.regex' => __('Slug Must Not Have Any Special Characters.')
+            'slug.unique' => 'This slug has already been taken.',
+            'slug.regex' => 'Slug Must Not Have Any Special Characters.',
+            'photo.required' => 'Feature Image is required.',
+            'photo.mimes' => 'Feature Image Type is Invalid.'
                    ];
         $validator = Validator::make($request->all(), $rules, $customs);
 
@@ -75,6 +84,12 @@ class SubCategoryController extends AdminBaseController
         //--- Logic Section
         $data = new Subcategory();
         $input = $request->all();
+        if ($file = $request->file('photo'))
+        {
+           $name = time().$file->getClientOriginalName();
+           $file->move('assets/images/subcategories',$name);
+           $input['image'] = $name;
+        }
         $data->fill($input)->save();
         //--- Logic Section Ends
 
@@ -97,11 +112,13 @@ class SubCategoryController extends AdminBaseController
     {
         //--- Validation Section
         $rules = [
-            'slug' => 'unique:subcategories,slug,'.$id.'|regex:/^[a-zA-Z0-9\s-]+$/'
+            'slug' => 'unique:subcategories,slug,'.$id.'|regex:/^[a-zA-Z0-9\s-]+$/',
+            'image' => 'mimes:jpeg,jpg,png,svg'
                  ];
         $customs = [
-            'slug.unique' => __('This slug has already been taken.'),
-            'slug.regex' => __('Slug Must Not Have Any Special Characters.')
+            'slug.unique' => 'This slug has already been taken.',
+            'slug.regex' => 'Slug Must Not Have Any Special Characters.',
+            'image.required' => 'Feature Image is required.'
                    ];
         $validator = Validator::make($request->all(), $rules, $customs);
 
@@ -113,6 +130,22 @@ class SubCategoryController extends AdminBaseController
         //--- Logic Section
         $data = Subcategory::findOrFail($id);
         $input = $request->all();
+        if ($file = $request->file('image'))
+        {
+           $name = time().$file->getClientOriginalName();
+           $file->move('assets/images/subcategories',$name);
+
+           if($data->image != null)
+            {
+                if (file_exists(public_path().'/assets/images/subcategories/'.$data->image)) {
+                    unlink(public_path().'/assets/images/subcategories/'.$data->image);
+                }
+            }
+           $input['image'] = $name;
+        }
+        if(!isset($request->is_popular)){
+            $input['is_popular'] = 0;
+        }
         $data->update($input);
         //--- Logic Section Ends
 
@@ -132,6 +165,13 @@ class SubCategoryController extends AdminBaseController
         $msg = __('Status Updated Successfully.');
         return response()->json($msg);
         //--- Redirect Section Ends
+    }
+    //*** GET Request Status
+    public function popular($id1,$id2)
+    {
+        $data = Subcategory::findOrFail($id1);
+        $data->is_popular = $id2;
+        $data->update();
     }
 
     //*** GET Request

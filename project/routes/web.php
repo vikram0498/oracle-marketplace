@@ -240,6 +240,7 @@ Route::group(['middleware'=>'permissions:brands'],function(){
     Route::post('/subcategory/edit/{id}', 'Admin\SubCategoryController@update')->name('admin-subcat-update');
     Route::delete('/subcategory/delete/{id}', 'Admin\SubCategoryController@destroy')->name('admin-subcat-delete');
     Route::get('/subcategory/status/{id1}/{id2}', 'Admin\SubCategoryController@status')->name('admin-subcat-status');
+    Route::get('/subcategory/popular/{id1}/{id2}', 'Admin\SubCategoryController@popular')->name('admin-subcat-popular');
     Route::get('/load/subcategories/{id}/', 'Admin\SubCategoryController@load')->name('admin-subcat-load'); //JSON REQUEST
 
     // SUBCATEGORY SECTION ENDS------------
