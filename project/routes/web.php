@@ -176,7 +176,19 @@ Route::delete('/state/delete/{id}', 'Admin\StateController@delete')->name('admin
 /////////////////////////////// ////////////////////////////////////////////
 
 
+//------------ ADMIN BRANDS SECTION ------------
 
+Route::group(['middleware'=>'permissions:brands'],function(){
+
+  Route::get('/brand/datatables', 'Admin\BrandController@datatables')->name('admin-brand-datatables'); //JSON REQUEST
+  Route::get('/brand', 'Admin\BrandController@index')->name('admin-brand-index');
+  Route::get('/brand/create', 'Admin\BrandController@create')->name('admin-brand-create');
+  Route::post('/brand/create', 'Admin\BrandController@store')->name('admin-brand-store');
+  Route::get('/brand/edit/{id}', 'Admin\BrandController@edit')->name('admin-brand-edit');
+  Route::post('/brand/edit/{id}', 'Admin\BrandController@update')->name('admin-brand-update');
+  Route::get('/brand/delete/{id}', 'Admin\BrandController@destroy')->name('admin-brand-delete');
+  Route::get('/brand/status/{id1}/{id2}', 'Admin\BrandController@status')->name('admin-brand-status');
+});
 
 
 
@@ -684,6 +696,9 @@ Route::get('/general-settings/deal_of_the_day', 'Admin\GeneralSettingController@
   Route::delete('/banner/delete/{id}', 'Admin\BannerController@destroy')->name('admin-sb-delete');
 
   //------------ ADMIN BANNER SECTION ENDS ------------
+
+
+  
 
   //------------ ADMIN PARTNER SECTION ------------
 
