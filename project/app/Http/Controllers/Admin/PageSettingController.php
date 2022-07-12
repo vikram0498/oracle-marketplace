@@ -172,6 +172,7 @@ class PageSettingController extends AdminBaseController
     public function customize()
     {
         $data = Pagesetting::find(1);
+        //dd($data);
         return view('admin.pagesetting.customize',compact('data'));
     }
 
