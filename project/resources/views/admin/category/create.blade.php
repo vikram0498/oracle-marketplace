@@ -28,7 +28,7 @@
 															  @endforeach
                                 </select>
                             </div>
-                            </div>
+                          </div>
 
 
                           <div class="row">
@@ -73,48 +73,85 @@
                           </div>
 
 
-                            <div class="row">
-                              <div class="col-lg-4">
-                                <div class="left-area">
-                                  <h4 class="heading">{{ __('Set Banner') }} *</h4>
-                                </div>
-                              </div>
-                              <div class="col-lg-7">
-                                <div class="img-upload full-width-img">
-                                  <div id="image-preview" class="img-preview" style="background: url({{ asset('assets/admin/images/upload.png') }});">
-                                    <label for="image-upload" class="img-label"><i class="icofont-upload-alt"></i>{{ __('Upload Banner') }}</label>
-                                    <input type="file" name="home_slider" class="img-upload">
-                                  </div>
-                                  <p class="text">{{__('Prefered Size: (1230x267) or Square Sized Image')}}</p>
-                                </div>
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="left-area">
+                                <h4 class="heading">{{ __('Set Banner') }} *</h4>
                               </div>
                             </div>
-                            <div class="row">
+                            <div class="col-lg-7">
+                              <div class="img-upload full-width-img">
+                                <div id="image-preview" class="img-preview" style="background: url({{ asset('assets/admin/images/upload.png') }});">
+                                  <label for="image-upload" class="img-label"><i class="icofont-upload-alt"></i>{{ __('Upload Banner') }}</label>
+                                  <input type="file" name="banner" class="img-upload">
+                                </div>
+                                <p class="text">{{__('Prefered Size: (1230x267) or Square Sized Image')}}</p>
+                              </div>
+                            </div>
+                          </div>
 
-													<div class="col-lg-4">
+                          
 
-														<div class="left-area">
+                          <div class="row">
 
-														</div>
+                            <div class="col-lg-4">
 
-													</div>
+                              <div class="left-area">
 
-													<div class="col-lg-7">
+                                  <h4 class="heading">{{ __('home page slider image') }} *</h4>
+                                  <p class="sub-heading">{{ __('200*200 px') }}</p>
 
-							              <div class="checkbox-wrapper">
+                              </div>
 
-							                <input type="checkbox" name="is_featured" class="checkclick" id="is_featured" value="1">
+                            </div>
 
-							                <label for="is_featured">{{ __('Allow Featured Category') }}</label>
+                            <div class="col-lg-7">
 
-							              </div>
+                              <div class="img-upload">
+
+                                  <div id="image-preview" class="img-preview" style="background: url({{ asset('assets/admin/images/upload.png') }});">
+
+                                      <label for="image-upload" class="img-label" id="image-label"><i class="icofont-upload-alt"></i>{{ __('Upload Icon') }}</label>
+
+                                      <input type="file" name="home_slider" class="img-upload" id="image-upload">
+
+                                    </div>
+
+                              </div>
 
 
 
-													</div>
+                            </div>
 
-												</div>
+                          </div>
 
+                          <div class="row">
+
+                            <div class="col-lg-4">
+
+                              <div class="left-area">
+
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-7">
+
+                              <div class="checkbox-wrapper">
+
+                                <input type="checkbox" name="is_featured" class="checkclick" id="is_featured" value="1">
+
+                                <label for="is_featured">{{ __('Allow Featured Category') }}</label>
+
+                              </div>
+
+
+
+                            </div>
+
+                          </div>
+
+                          
 
 
 						            <div class="showbox">

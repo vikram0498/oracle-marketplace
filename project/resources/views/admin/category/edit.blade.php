@@ -81,15 +81,48 @@
 													</div>
                           <div class="col-lg-7">
                             <div class="img-upload full-width-img">
-                              <div id="image-preview" class="img-preview" style="background: url({{ $data->image ? asset('assets/images/categories/'.$data->home_slider):asset('assets/images/noimage.png') }});">
+                              <div id="image-preview" class="img-preview" style="background: url({{ $data->image ? asset('assets/images/categories/'.$data->banner):asset('assets/images/noimage.png') }});">
                                 <label for="image-upload" class="img-label"><i class="icofont-upload-alt"></i>{{ __('Upload Banner') }}</label>
-                                <input type="file" name="home_slider" class="img-upload">
+                                <input type="file" name="banner" class="img-upload">
                               </div>
                               <p class="text">{{__('Prefered Size: (1230x267) or Square Sized Image')}}</p>
                             </div>
                           </div>
 
 												</div>
+
+                        <div class="row">
+
+                          <div class="col-lg-4">
+
+                            <div class="left-area">
+
+                                <h4 class="heading">{{ __('home page slider image') }} *</h4>
+                                <p class="sub-heading">{{ __('200*200 px') }}</p>
+
+                            </div>
+
+                          </div>
+
+                          <div class="col-lg-7">
+
+                            <div class="img-upload">
+
+                                <div id="image-preview" class="img-preview" style="background: url({{ $data->home_slider ? asset('assets/images/categories/'.$data->home_slider):asset('assets/images/noimage.png') }});">
+
+                                    <label for="image-upload" class="img-label" id="image-label"><i class="icofont-upload-alt"></i>{{ __('Upload Icon') }}</label>
+
+                                    <input type="file" name="home_slider" class="img-upload" id="image-upload">
+
+                                  </div>
+
+                            </div>
+
+
+
+                          </div>
+
+                        </div>
 
                         <div class="row">
 

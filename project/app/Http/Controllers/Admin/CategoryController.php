@@ -47,19 +47,23 @@ class CategoryController extends AdminBaseController
     //*** POST Request
     public function store(Request $request)
     {
+        // dd($request->all());
         //--- Validation Section
         $rules = [
             'photo' => 'mimes:jpeg,jpg,png,svg',
             'slug' => 'unique:categories|regex:/^[a-zA-Z0-9\s-]+$/',
-            'home_slider' => 'required|mimes:jpeg,jpg,png,svg'
-                 ];
+            'home_slider' => 'required|mimes:jpeg,jpg,png,svg',
+            'banner' => 'required|mimes:jpeg,jpg,png,svg'
+        ];
         $customs = [
             'photo.mimes' => __('Icon Type is Invalid.'),
             'slug.unique' => __('This slug has already been taken.'),
             'slug.regex' => __('Slug Must Not Have Any Special Characters.'),
-            'home_slider.required' => __('Banner Image is required.'),
-            'home_slider.mimes' => __('Banner Image Type is Invalid.')
-                   ];
+            'home_slider.required' => __('Home slider Image is required.'),
+            'home_slider.mimes' => __('Home slider Image Type is Invalid.'),
+            'bannar.required' => __('Banner Image is required.'),
+            'bannar.mimes' => __('Banner Image Type is Invalid.')
+        ];
         $validator = Validator::make($request->all(), $rules, $customs);
 
         if ($validator->fails()) {
@@ -81,6 +85,11 @@ class CategoryController extends AdminBaseController
             $name = \PriceHelper::ImageCreateName($file);
             $file->move('assets/images/categories',$name);
             $input['home_slider'] = $name;
+        }
+        if($file = $request->file('banner')){
+            $name = \PriceHelper::ImageCreateName($file);
+            $file->move('assets/images/categories',$name);
+            $input['banner'] = $name;
         }
         if (!isset($request->is_featured)){
             $input['is_featured'] = 0;
@@ -166,6 +175,11 @@ class CategoryController extends AdminBaseController
                 $name = \PriceHelper::ImageCreateName($file);
                 $file->move('assets/images/categories',$name);
                 $input['home_slider'] = $name;
+            }
+            if($file = $request->file('banner')){
+                $name = \PriceHelper::ImageCreateName($file);
+                $file->move('assets/images/categories',$name);
+                $input['banner'] = $name;
             }
             if (!isset($request->is_featured)){
                 $input['is_featured'] = 0;
