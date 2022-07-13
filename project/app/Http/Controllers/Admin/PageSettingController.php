@@ -90,7 +90,6 @@ class PageSettingController extends AdminBaseController
     {
         $data = Pagesetting::findOrFail(1);
         $input = $request->all();
-
         if ($request->category == ""){
             $input['category'] = 0;
         }
@@ -130,10 +129,64 @@ class PageSettingController extends AdminBaseController
         if ($request->top_brand == ""){
             $input['top_brand'] = 0;
         }
-
-
+        //new col added 
+        if ($request->category_slider == ""){
+            $input['category_slider'] = 0;
+        }
+        if ($request->top_deal == ""){
+            $input['top_deal'] = 0;
+        }
+        if ($request->popular_gifts == ""){
+            $input['popular_gifts'] = 0;
+        }
+        if ($request->used_product_slider == ""){
+            $input['used_product_slider'] = 0;
+        }
+        if ($request->smart_watch_banner == ""){
+            $input['smart_watch_banner'] = 0;
+        }
+        if ($request->two_banner_section == ""){
+            $input['two_banner_section'] = 0;
+        }
+        if ($request->flash_deal_of_day == ""){
+           
+            $input['flash_deal_of_day'] = 0;
+        }
+        if ($request->four_section_banner == ""){
+            $input['four_section_banner'] = 0;
+        }
+        if ($request->best_seller_slider == ""){
+            $input['best_seller_slider'] = 0;
+        }
+        if ($request->top_products == ""){
+            $input['top_products'] = 0;
+        }
+        if ($request->kitchen_banner == ""){
+            $input['kitchen_banner'] = 0;
+        }
+        if ($request->trending_collection_slider == ""){
+            $input['trending_collection_slider'] = 0;
+        }
+        if ($request->discount_banner == ""){
+            $input['discount_banner'] = 0;
+        }
+        
+        if ($request->best_fashion_banner == ""){
+            $input['best_fashion_banner'] = 0;
+        }
+        if ($request->auction_products_slider == ""){
+            $input['auction_products_slider'] = 0;
+        }
+        if ($request->popular_category_slider == ""){
+            $input['popular_category_slider'] = 0;
+        }
+        if ($request->premiumn_products == ""){
+            $input['premiumn_products'] = 0;
+        }
+        if ($request->recent_view == ""){
+            $input['recent_view'] = 0;
+        }
         $data->update($input);
-
         cache()->forget('pagesettings');
         $msg = __('Data Updated Successfully.');
         return response()->json($msg);

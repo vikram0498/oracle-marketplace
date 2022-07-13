@@ -22,8 +22,6 @@ class DashboardController extends AdminBaseController
 
     public function index()
     {
-
-
         $data['pending'] = Order::where('status','=','pending')->get();
         $data['processing'] = Order::where('status','=','processing')->get();
         $data['completed'] = Order::where('status','=','completed')->get();
