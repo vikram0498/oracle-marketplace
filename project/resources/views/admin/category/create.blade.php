@@ -1,5 +1,4 @@
 @extends('layouts.load')
-
 @section('content')
 
             <div class="content-area">

@@ -89,14 +89,9 @@ public function currency($id)
                 return redirect()->guest('/')->with('forgot-modal',__('Please Login Now !'));
             }
          }
-
-
         $data['sliders'] = DB::table('sliders')
                             ->where('language_id',$this->language->id)
                             ->get();
-
-
-
         $data['arrivals']=ArrivalSection::where('status',1)->get();
         $data['products']=Product::get();
         $data['ratings']=Rating::get();
