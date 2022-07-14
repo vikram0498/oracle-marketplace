@@ -9819,351 +9819,209 @@
 
 
 /*style file end*/
+:root {
+    --theme-secondary-color: #1f1f1f;
+}
 .simple-service{
    		margin-top: 30px;
    }
+
+.time-count.time-box li {
+    border: 2px solid var(--theme-secondary-color);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-box ul li {
+    border-color: #e5e5e5 !important;
+    background: #fff;
+}
+.time-count.time-box li span:first-child {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 auto;
+    line-height: initial;
+    height: auto;
+    color: #1f1f1f;
+}
+.time-count.time-box li span:last-child {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #1f1f1f;
+}
+
+
+.my-30, .m-30, .mb-30 {
+    margin-bottom: 30px !important;
+}
 </style>
 @endsection
 @section('content')
 <!-- section 1 -->
-	<section class="hero-area">
-         <div class="container">
-	      <div class="hero-area-slider">
-	         <div class="slide-progress" style="width: 0px; transition: width 0s ease 0s;"></div>
-	         <div class="intro-carousel owl-carousel owl-theme owl-loaded">
-	                        
-	                        
-	                        
-	                     <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5280px, 0px, 0px); transition: all 0s ease 0s; width: 9240px;"><div class="owl-item cloned" style="width: 1320px; margin-right: 0px;"><div class="containerss slide-one ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586862BigWinterSaleBanner.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle9" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title9" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text9" data-animation="animated slideInDown"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373108352x144bigwinter.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle9" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title9" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text9" data-animation="animated slideInDown"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div><div class="owl-item cloned" style="width: 1320px; margin-right: 0px;"><div class="containerss slide-two ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586884ExclusiveHeadphone.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #c32d2d" class="subtitle subtitle10" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #bc2727" class="title title10" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #c51d1d" class="text text10" data-animation="animated slideInLeft"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373129352x144headphone.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #c32d2d" class="subtitle subtitle10" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #bc2727" class="title title10" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #c51d1d" class="text text10" data-animation="animated slideInLeft"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div><div class="owl-item" style="width: 1320px; margin-right: 0px;"><div class="containerss slide-one ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586841BigWinterFashionSale.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title8" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text8" data-animation="animated slideInRight"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373088big-image.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title8" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text8" data-animation="animated slideInRight"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div><div class="owl-item animated owl-animated-out fadeOut" style="width: 1320px; margin-right: 0px; left: 1320px;"><div class="containerss slide-one ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586862BigWinterSaleBanner.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle9" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title9" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text9" data-animation="animated slideInDown"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373108352x144bigwinter.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle9" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title9" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text9" data-animation="animated slideInDown"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div><div class="owl-item animated owl-animated-in fadeIn active" style="width: 1320px; margin-right: 0px;"><div class="containerss slide-two ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586884ExclusiveHeadphone.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #c32d2d" class="subtitle subtitle10" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #bc2727" class="title title10" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #c51d1d" class="text text10" data-animation="animated slideInLeft"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373129352x144headphone.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #c32d2d" class="subtitle subtitle10" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #bc2727" class="title title10" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #c51d1d" class="text text10" data-animation="animated slideInLeft"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div><div class="owl-item cloned" style="width: 1320px; margin-right: 0px;"><div class="containerss slide-one ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586841BigWinterFashionSale.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title8" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text8" data-animation="animated slideInRight"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373088big-image.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title8" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text8" data-animation="animated slideInRight"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div><div class="owl-item cloned" style="width: 1320px; margin-right: 0px;"><div class="containerss slide-one ">
-	            
-	               <div class="intro-content desktop-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1654586862BigWinterSaleBanner.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle9" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title9" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text9" data-animation="animated slideInDown"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            
-	            
-	               <div class="intro-content mobile-banner" style="background-image: url(//localhost/oracle_old/assets/images/sliders/1655373108352x144bigwinter.jpg)">
-	                  <div class="row">
-	                     <div class="col-lg-12">
-	                        <div class="slider-content">
-	                           
-	                           <div class="layer-1">
-	                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle9" data-animation="animated slideInUp"></h4>
-	                              <h2 style="font-size: 60px; color: #ffffff" class="title title9" data-animation="animated slideInDown"></h2>
-	                           </div>
-	                           
-	                           <div class="layer-2">
-	                              <p style="font-size: 16px; color: #ffffff" class="text text9" data-animation="animated slideInDown"></p>
-	                           </div>
-	                           
-	                           <div class="layer-3">
-	                              <a href="//www.google.com/" target="_blank" class="mybtn1"><span>Shop Now <i class="fas fa-chevron-right"></i></span></a>
-	                           </div>
-	                        </div>
-	                     </div>
-	                  </div>
-	               </div>
-	            </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div></div>
-	      </div>
-	     </div>
-    </section>
+      
+<section class="hero-area">
+   <div class="container">
+      <div class="hero-area-slider">
+         <div class="slide-progress"></div>
+         <div class="intro-carousel">
+            <div class="containerss slide-one ">
+            
+               <div class="intro-content desktop-banner" style="background-image: url({{asset('asset_old/images/sliders/1654586862BigWinterSaleBanner.jpg')}})">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="slider-content">
+                           <!-- layer 1 -->
+                           <div class="layer-1">
+                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
+                              <h2 style="font-size: 60px; color: #ffffff;" class="title title8" data-animation="animated slideInDown"></h2>
+                           </div>
+                           <!-- layer 2 -->
+                           <div class="layer-2">
+                              <p style="font-size: 16px; color: #ffffff;"  class="text text8" data-animation="animated slideInDown">nvfskj jkbcsdk</p>
+                           </div>
+                           <!-- layer 3 -->
+                           <div class="layer-3">
+                              <a href="#" target="_blank" class="mybtn1"><span>shop now <i class="fas fa-chevron-right"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            
+            
+               <div class="intro-content mobile-banner" style="background-image: url({{asset('asset_old/images/sliders/1654586862BigWinterSaleBanner.jpg')}})">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="slider-content">
+                           <!-- layer 1 -->
+                           <div class="layer-1">
+                              <h4 style="font-size: 24px; color: #c32d2d;" class="subtitle subtitle8" data-animation="animated slideInDown">nvfsjn lkjdkl</h4>
+                              <h2 style="font-size: 60px; color: #ffffff;" class="title title8" data-animation="animated slideInDown">ndsj</h2>
+                           </div>
+                           <!-- layer 2 -->
+                           <div class="layer-2">
+                              <p style="font-size: 16px; color: #ffffff;"  class="text text8" data-animation="animated slideInDown">vfsvs</p>
+                           </div>
+                           <!-- layer 3 -->
+                           <div class="layer-3">
+                              <a href="#" target="_blank" class="mybtn1"><span>shop now <i class="fas fa-chevron-right"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="containerss slide-two ">
+            
+               <div class="intro-content desktop-banner" style="background-image: url({{asset('asset_old/images/sliders/1654586862BigWinterSaleBanner.jpg')}})">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="slider-content">
+                           <!-- layer 1 -->
+                           <div class="layer-1">
+                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
+                              <h2 style="font-size: 60px; color: #ffffff;" class="title title8" data-animation="animated slideInDown"></h2>
+                           </div>
+                           <!-- layer 2 -->
+                           <div class="layer-2">
+                              <p style="font-size: 16px; color: #ffffff;"  class="text text8" data-animation="animated slideInDown">nvfskj jkbcsdk</p>
+                           </div>
+                           <!-- layer 3 -->
+                           <div class="layer-3">
+                              <a href="#" target="_blank" class="mybtn1"><span>shop now <i class="fas fa-chevron-right"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            
+            
+               <div class="intro-content mobile-banner" style="background-image: url({{asset('asset_old/images/sliders/1654586862BigWinterSaleBanner.jpg')}})">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="slider-content">
+                           <!-- layer 1 -->
+                           <div class="layer-1">
+                              <h4 style="font-size: 24px; color: #c32d2d;" class="subtitle subtitle8" data-animation="animated slideInDown">nvfsjn lkjdkl</h4>
+                              <h2 style="font-size: 60px; color: #ffffff;" class="title title8" data-animation="animated slideInDown">ndsj</h2>
+                           </div>
+                           <!-- layer 2 -->
+                           <div class="layer-2">
+                              <p style="font-size: 16px; color: #ffffff;"  class="text text8" data-animation="animated slideInDown">vfsvs</p>
+                           </div>
+                           <!-- layer 3 -->
+                           <div class="layer-3">
+                              <a href="#" target="_blank" class="mybtn1"><span>shop now <i class="fas fa-chevron-right"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="containerss slide-three ">
+            
+               <div class="intro-content desktop-banner" style="background-image: url({{asset('asset_old/images/sliders/1654586862BigWinterSaleBanner.jpg')}})">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="slider-content">
+                           <!-- layer 1 -->
+                           <div class="layer-1">
+                              <h4 style="font-size: 24px; color: #ffffff" class="subtitle subtitle8" data-animation="animated slideInUp"></h4>
+                              <h2 style="font-size: 60px; color: #ffffff;" class="title title8" data-animation="animated slideInDown"></h2>
+                           </div>
+                           <!-- layer 2 -->
+                           <div class="layer-2">
+                              <p style="font-size: 16px; color: #ffffff;"  class="text text8" data-animation="animated slideInDown">nvfskj jkbcsdk</p>
+                           </div>
+                           <!-- layer 3 -->
+                           <div class="layer-3">
+                              <a href="#" target="_blank" class="mybtn1"><span>shop now <i class="fas fa-chevron-right"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            
+            
+               <div class="intro-content mobile-banner" style="background-image: url({{asset('asset_old/images/sliders/1654586862BigWinterSaleBanner.jpg')}})">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="slider-content">
+                           <!-- layer 1 -->
+                           <div class="layer-1">
+                              <h4 style="font-size: 24px; color: #c32d2d;" class="subtitle subtitle8" data-animation="animated slideInDown">nvfsjn lkjdkl</h4>
+                              <h2 style="font-size: 60px; color: #ffffff;" class="title title8" data-animation="animated slideInDown">ndsj</h2>
+                           </div>
+                           <!-- layer 2 -->
+                           <div class="layer-2">
+                              <p style="font-size: 16px; color: #ffffff;"  class="text text8" data-animation="animated slideInDown">vfsvs</p>
+                           </div>
+                           <!-- layer 3 -->
+                           <div class="layer-3">
+                              <a href="#" target="_blank" class="mybtn1"><span>shop now <i class="fas fa-chevron-right"></i></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
 
 
     <!-- section 2 -->
- <section class="trending">
+<section class="trending">
    <div class="container">
       <div class="row">
          <div class="col-lg-12 rem-padding">
@@ -10171,61 +10029,66 @@
                <h2 class="section-title">
                   Shop by Category
                </h2>
-               <a href="//localhost/oracle_old/products/categories" class="link">View All</a>
+               <a href="#" class="link">View All</a>
             </div>
          </div>
       </div>
       <div class="row">
          <div class="col-lg-12 rem-padding">
          	<div class="trending-item-slider_category">
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+	                     <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
+
+               <a href="#">
                   <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
-                  </div>
-               </a>
-               <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="single-category item">
-                  <div class="item-img">
-	                     <img class="img-fluid" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" alt="">
+                        <img class="img-fluid" src="{{asset('asset_old/images/categories/1622787564ElectronicsCategory.jpg')}}" alt="">
                   </div>
                </a>
             </div>
@@ -10234,6 +10097,7 @@
    </div>
 </section>
 	 <!-- section 3  -->
+
 <div class="full-row">
    	<div class="container">
     <div class="row justify-content-center">
@@ -10249,8 +10113,10 @@
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" style=""></a>
-                                        <div class="on-sale">- 48%</div>
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
                     
                     <div class="hover-area">
                                             <div class="cart-button">
@@ -10260,7 +10126,7 @@
                         <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
                         <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
@@ -10268,7 +10134,7 @@
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1">Physical Product Title Title will Be Here 102</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
                         <ins>115$ </ins>
@@ -10286,34 +10152,37 @@
                 </div>
             </div>
         </div>
+        
         <div class="col">
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/top-rated-product-title-will-be-here-according-to-your-wish-123-6vb6172gwr1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013448fKLXa8ZZ.jpg" style=""></a>
-                                        <div class="on-sale">- 79%</div>
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
                     
                     <div class="hover-area">
                                             <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/170" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
                     </div>
                     <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/170" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/170" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
                     </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/top-rated-product-title-will-be-here-according-to-your-wish-123-6vb6172gwr1">Top Rated product title will be here according to ...</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
-                        <ins>110$ </ins>
-                        <del>530$</del>
+                        <ins>115$ </ins>
+                        <del>220$</del>
                         </div>
                     </div>
                     <div class="shipping-feed-back">
@@ -10327,34 +10196,38 @@
                 </div>
             </div>
         </div>
+        
+
         <div class="col">
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/top-rated-product-title-will-be-here-according-to-your-wish-123-trg5938wny1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639377739Zf2W38p8.jpg" style=""></a>
-                                        <div class="on-sale">- 79%</div>
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
                     
                     <div class="hover-area">
                                             <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/169" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
                     </div>
                     <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/169" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/169" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
                     </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/top-rated-product-title-will-be-here-according-to-your-wish-123-trg5938wny1">Top Rated product title will be here according to ...</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
-                        <ins>110$ </ins>
-                        <del>530$</del>
+                        <ins>115$ </ins>
+                        <del>220$</del>
                         </div>
                     </div>
                     <div class="shipping-feed-back">
@@ -10368,34 +10241,37 @@
                 </div>
             </div>
         </div>
+        
         <div class="col">
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737le1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013669ZDg86Ncm.jpg" style=""></a>
-                                        <div class="on-sale">- 45%</div>
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
                     
                     <div class="hover-area">
                                             <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/165" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
                     </div>
                     <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/165" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/165" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
                     </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737le1">Zain - Digital Agency and Startup HTML Template</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
-                        <ins>320$ </ins>
-                        <del>580.40$</del>
+                        <ins>115$ </ins>
+                        <del>220$</del>
                         </div>
                     </div>
                     <div class="shipping-feed-back">
@@ -10409,34 +10285,37 @@
                 </div>
             </div>
         </div>
+        
         <div class="col">
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737lev1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639378035XJWgisPU.jpg" style=""></a>
-                                        <div class="on-sale">- 45%</div>
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
                     
                     <div class="hover-area">
                                             <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/164" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
                     </div>
                     <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/164" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/164" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
                     </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737lev1">Zain - Digital Agency and Startup HTML Template</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
-                        <ins>321$ </ins>
-                        <del>581.40$</del>
+                        <ins>115$ </ins>
+                        <del>220$</del>
                         </div>
                     </div>
                     <div class="shipping-feed-back">
@@ -10450,34 +10329,37 @@
                 </div>
             </div>
         </div>
+        
         <div class="col">
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-1ui8665inp1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/16480140873qDlGgIK.jpg" style=""></a>
-                                        <div class="on-sale">- 35%</div>
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
                     
                     <div class="hover-area">
                                             <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/163" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
                     </div>
                     <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/163" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/163" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
                     </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-1ui8665inp1">Zain - Digital Agency and Startup HTML Template</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
-                        <ins>321$ </ins>
-                        <del>493.20$</del>
+                        <ins>115$ </ins>
+                        <del>220$</del>
                         </div>
                     </div>
                     <div class="shipping-feed-back">
@@ -10491,74 +10373,37 @@
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/revel-real-estate-html-template-d2e6433yi01" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639378418BxWim5Uq.jpg" style=""></a>
-                                    <div class="on-sale">- 23%</div>
-                
-                <div class="hover-area">
-                                        <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/161" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                </div>
-                <div class="cart-button buynow">
-                    <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/161" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                </div>
-                                                    <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                </div>
-                            <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/161" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/revel-real-estate-html-template-d2e6433yi01">Revel - Real Estate HTML Template</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                    <ins>350$ </ins>
-                    <del>455$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                    <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-        </div>
+        
         <div class="col">
             <div class="product type-product">
                 <div class="product-wrapper">
                 <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-o1l5621dis1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639392364Li5C3bEO.jpg" style=""></a>
-                            
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
+                    
                     <div class="hover-area">
                                             <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/160" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
                     </div>
                     <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/160" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
                     </div>
                                                         <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
                     </div>
                                 <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/160" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
                     </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-o1l5621dis1">Zain - Digital Agency and Startup HTML Template</a></h3>
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
                     <div class="product-price">
                         <div class="price">
-                        <ins>368.30$ </ins>
-                        <del>368.30$</del>
+                        <ins>115$ </ins>
+                        <del>220$</del>
                         </div>
                     </div>
                     <div class="shipping-feed-back">
@@ -10572,12 +10417,58 @@
                 </div>
             </div>
         </div>
+        
+        <div class="col">
+            <div class="product type-product">
+                <div class="product-wrapper">
+                <div class="product-image">
+                    <a href="#" class="woocommerce-LoopProduct-link">
+                     <img class="lazy" alt="Product Image" src="{{asset('assets/images/thumbnails/1648013376Q0pmYfnP.jpg')}}" style="">
+                    </a>
+                     <div class="on-sale">- 48%</div>
+                    
+                    <div class="hover-area">
+                                            <div class="cart-button">
+                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
+                    </div>
+                    <div class="cart-button buynow">
+                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
+                    </div>
+                                                        <div class="wishlist-button">
+                        <a class="add_to_wishlist button add_to_cart_button" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
+                    </div>
+                                <div class="compare-button">
+                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title"><a href="#">Physical Product Title Title will Be Here 102</a></h3>
+                    <div class="product-price">
+                        <div class="price">
+                        <ins>115$ </ins>
+                        <del>220$</del>
+                        </div>
+                    </div>
+                    <div class="shipping-feed-back">
+                        <div class="star-rating">
+                        <div class="rating-wrap">
+                            <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+
     </div>
    </div>
 	</div>
 </div>
     <!-- section 4  -->
-    <section class="trending-new-sec">
+<section class="trending-new-sec">
    <div class="container">
       <div class="trending-new-inn">
          <div class="row">
@@ -10587,7 +10478,7 @@
                      Featured Brands
                   </h2>
                </div>
-               
+               <!-- Sidebar map list tab start here -->
                <div class="side-tabsss">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                      <li class="nav-item">
@@ -10599,205 +10490,236 @@
                   </ul>
                   <div class="tab-content" id="myTabContent">
                      <div class="tab-pane fade show active" id="featured_map" role="tabpanel" aria-labelledby="map-tab">
-                        
+                        <!-- Map Content-->
                         <div class="map-social">
                            <div class="map-social-inner">
                               <ul>
-                                                                  <li>
-	<a href="//localhost/oracle_old/brand/apple">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957161apple-logo.png" alt="">
-		</span>
-		<p>APPLE</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/samsung">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957221samsung-logo.png" alt="">
-		</span>
-		<p>Samsung</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/hp">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957664HP.png" alt="">
-		</span>
-		<p>HP</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/nike">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957312nike-logo.png" alt="">
-		</span>
-		<p>Nike</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/pepsi">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957403pepsi-logo.png" alt="">
-		</span>
-		<p>Pepsi</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/nescafe">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957467nescafe-logo.png" alt="">
-		</span>
-		<p>Nescafe</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/gillette">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957536gillette-logo.png" alt="">
-		</span>
-		<p>Gillette</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/zara">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957608zara-logo.png" alt="">
-		</span>
-		<p>Zara</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/sony">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1635957733sony.png" alt="">
-		</span>
-		<p>Sony</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/demo">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1645593661joomla-logo-5B8F90ADD3-seeklogo.com.png" alt="">
-		</span>
-		<p>rolex</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/Lakme">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/1645606551fb520cf4858642928e86ee0107fab698.png" alt="">
-		</span>
-		<p>Lakme</p>
-	</a>
-</li>                                                                  <li>
-	<a href="//localhost/oracle_old/brand/cadbury">
-		<span>
-		<img src="//localhost/oracle_old/assets/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg" alt="">
-		</span>
-		<p>Cadbury</p>
-	</a>
-</li>                                                               </ul>
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="#">
+                                       <span>
+                                       <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg') }}" alt="">
+                                       </span>
+                                       <p>Brand Name </p>
+                                    </a>
+                                 </li>
+                              </ul>
                            </div>
                         </div>
                      </div>
                      <div class="tab-pane fade" id="featured_list" role="tabpanel" aria-labelledby="list-tab">
-                        
+                        <!-- List Content-->
                         <div class="cat-sidebar">
-                                                                                                            <div class="cat-sidebar-content">	
-	<div class="cat-sidebar-img">
-		<img src="//localhost/oracle_old/assets/images/brands/1635957161apple-logo.png" alt="">
-	</div>
-	<div class="cat-sidebar-text">
-		<h4>APPLE</h4>
-		<p>94 Products </p>
-	</div>
-	<div class="cat-sidebar-like">
-		<a href="//localhost/oracle_old/brand/apple">
-			
-			<i class="fas fa-info-circle"></i>
-		</a>
-	</div>
-</div>                                                                                                                                       <div class="cat-sidebar-content">	
-	<div class="cat-sidebar-img">
-		<img src="//localhost/oracle_old/assets/images/brands/1635957221samsung-logo.png" alt="">
-	</div>
-	<div class="cat-sidebar-text">
-		<h4>Samsung</h4>
-		<p>2 Products </p>
-	</div>
-	<div class="cat-sidebar-like">
-		<a href="//localhost/oracle_old/brand/samsung">
-			
-			<i class="fas fa-info-circle"></i>
-		</a>
-	</div>
-</div>                                                                                                                                       <div class="cat-sidebar-content">	
-	<div class="cat-sidebar-img">
-		<img src="//localhost/oracle_old/assets/images/brands/1635957664HP.png" alt="">
-	</div>
-	<div class="cat-sidebar-text">
-		<h4>HP</h4>
-		<p>4 Products </p>
-	</div>
-	<div class="cat-sidebar-like">
-		<a href="//localhost/oracle_old/brand/hp">
-			
-			<i class="fas fa-info-circle"></i>
-		</a>
-	</div>
-</div>                                                                                                                                       <div class="cat-sidebar-content">	
-	<div class="cat-sidebar-img">
-		<img src="//localhost/oracle_old/assets/images/brands/1635957312nike-logo.png" alt="">
-	</div>
-	<div class="cat-sidebar-text">
-		<h4>Nike</h4>
-		<p>1 Products </p>
-	</div>
-	<div class="cat-sidebar-like">
-		<a href="//localhost/oracle_old/brand/nike">
-			
-			<i class="fas fa-info-circle"></i>
-		</a>
-	</div>
-</div>                                                                                                                                       <div class="cat-sidebar-content">	
-	<div class="cat-sidebar-img">
-		<img src="//localhost/oracle_old/assets/images/brands/1635957403pepsi-logo.png" alt="">
-	</div>
-	<div class="cat-sidebar-text">
-		<h4>Pepsi</h4>
-		<p>0 Products </p>
-	</div>
-	<div class="cat-sidebar-like">
-		<a href="//localhost/oracle_old/brand/pepsi">
-			
-			<i class="fas fa-info-circle"></i>
-		</a>
-	</div>
-</div>                                                                                                                                       <div class="cat-sidebar-content">	
-	<div class="cat-sidebar-img">
-		<img src="//localhost/oracle_old/assets/images/brands/1635957467nescafe-logo.png" alt="">
-	</div>
-	<div class="cat-sidebar-text">
-		<h4>Nescafe</h4>
-		<p>0 Products </p>
-	</div>
-	<div class="cat-sidebar-like">
-		<a href="//localhost/oracle_old/brand/nescafe">
-			
-			<i class="fas fa-info-circle"></i>
-		</a>
-	</div>
-</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
+                           <div class="cat-sidebar-content">   
+                              <div class="cat-sidebar-img">
+                                 <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg')}}" alt="">
+                              </div>
+                              <div class="cat-sidebar-text">
+                                 <h4>Brand Name</h4>
+                                 <p>94 Products </p>
+                              </div>
+                              <div class="cat-sidebar-like">
+                                 <a href="#">
+                                    <!-- <img src="assets/front/images/like-icon.png" alt=""> -->
+                                    <i class="fas fa-info-circle"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="cat-sidebar-content">   
+                              <div class="cat-sidebar-img">
+                                 <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg')}}" alt="">
+                              </div>
+                              <div class="cat-sidebar-text">
+                                 <h4>Brand Name</h4>
+                                 <p>94 Products </p>
+                              </div>
+                              <div class="cat-sidebar-like">
+                                 <a href="#">
+                                    <!-- <img src="assets/front/images/like-icon.png" alt=""> -->
+                                    <i class="fas fa-info-circle"></i>
+                                 </a>
+                              </div>
+                           </div>
+
+                           <div class="cat-sidebar-content">   
+                              <div class="cat-sidebar-img">
+                                 <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg')}}" alt="">
+                              </div>
+                              <div class="cat-sidebar-text">
+                                 <h4>Brand Name</h4>
+                                 <p>94 Products </p>
+                              </div>
+                              <div class="cat-sidebar-like">
+                                 <a href="#">
+                                    <!-- <img src="assets/front/images/like-icon.png" alt=""> -->
+                                    <i class="fas fa-info-circle"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="cat-sidebar-content">   
+                              <div class="cat-sidebar-img">
+                                 <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg')}}" alt="">
+                              </div>
+                              <div class="cat-sidebar-text">
+                                 <h4>Brand Name</h4>
+                                 <p>94 Products </p>
+                              </div>
+                              <div class="cat-sidebar-like">
+                                 <a href="#">
+                                    <!-- <img src="assets/front/images/like-icon.png" alt=""> -->
+                                    <i class="fas fa-info-circle"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="cat-sidebar-content">   
+                              <div class="cat-sidebar-img">
+                                 <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg')}}" alt="">
+                              </div>
+                              <div class="cat-sidebar-text">
+                                 <h4>Brand Name</h4>
+                                 <p>94 Products </p>
+                              </div>
+                              <div class="cat-sidebar-like">
+                                 <a href="#">
+                                    <!-- <img src="assets/front/images/like-icon.png" alt=""> -->
+                                    <i class="fas fa-info-circle"></i>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="cat-sidebar-content">   
+                              <div class="cat-sidebar-img">
+                                 <img src="{{asset('asset_old/images/brands/164561755612-Most-Famous-Chocolate-Brands-and-Logos.jpg')}}" alt="">
+                              </div>
+                              <div class="cat-sidebar-text">
+                                 <h4>Brand Name</h4>
+                                 <p>94 Products </p>
+                              </div>
+                              <div class="cat-sidebar-like">
+                                 <a href="#">
+                                    <!-- <img src="assets/front/images/like-icon.png" alt=""> -->
+                                    <i class="fas fa-info-circle"></i>
+                                 </a>
+                              </div>
+                           </div>
+
+                        </div>
                      </div>
                   </div>
                   <div class="sideviewall">
-                     <a href="//localhost/oracle_old/brands">View All</a>
+                     <a href="#">View All</a>
                   </div>
                </div>
-               
+               <!-- Sidebar map list tab start end -->
             </div>
             <div class="col-lg-8 side-right ">
                <div class="col-lg-12 rem-padding">
                   <div class="section-top">
                      <h2 class="primary-heading primary-heading1 m-1 pt-1">
-                     Top 50 Deals
-                  </h2></div>
+                     Top 50 Deals</hh2>
+                  </div>
                </div>
                <div class="row">
                </div>
                <div class="topfifty-pr-new mt-3">
-                                    
+                 
+                  <!-- TOP 50 Today Sectin start-->
                   <div class="topfifty-today">
                      <div class="topfifty-inner">
                         <div class="row">
@@ -10812,764 +10734,324 @@
                               <div class="topfifty-product">
                                  <div class="row">
                                     <div class="col-lg-12 rem-padding">
-                                    	
-                                       <div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-                                                                                                                              
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                    
-                                                                                 <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-825px, 0px, 0px); transition: all 0s ease 0s; width: 2475px;"><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/belle-of-the-ball-glamour-makeup-mirror-gmm-m-bb-md">
+                                       <div class="trending-item-slider">
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-   <div class="cup-img">
-      <span>1</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631337539qGdIHcAu.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$702.7 <del><small>$702.7</small></del></h4>
-      <h5 class="name">Belle of the Ball - Glamour Makeup Mirror</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/samsung-galaxy-a71-sm-a715fds-4g-lte-128gb6gb-ram-android-prism-crush-silver-oit199uzy">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-   <div class="cup-img">
-      <span>2</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625292525EdEuymIE.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$336.56 <del><small></small></del></h4>
-      <h5 class="name">Samsung Galaxy A71 Sm-a715f/ds 4g LTE 128gb/6gb RAM And...</h5>
-      
-   </div>
-</a>
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/apple-iphone-12-128gb-black-lzq1987kx">
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
 
-   <div class="cup-img">
-      <span>3</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625291282hi2PzjmP.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$832.26 <del><small></small></del></h4>
-      <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/insight-incolor-anti-yellow-shampoo-400ml-insight034">
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-     <div class="cup-img">
-      <span>4</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1623750814WakXx8wQ.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$22.18 <del><small></small></del></h4>
-      <h5 class="name">Insight Incolor Anti-Yellow Shampoo 400ml</h5>
-      
-   </div>
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-</a>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
 
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/amiri-mwo4754ilu">
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-   <div class="cup-img">
-      <span>5</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$42.25 <del><small></small></del></h4>
-      <h5 class="name">Amiri</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/microwave-4ya2707ln2">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-      <div class="cup-img">
-      <span>6</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16090828588tHsRfHG.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$14.08 <del><small></small></del></h4>
-      <h5 class="name">microwave</h5>
-      
-   </div>
-</a>
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/physical-product-title-title-will-be-here-99-tcv6794kxs">
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
 
-     <div class="cup-img">
-      <span>7</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876820rpkj3Z6U.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
-      <h5 class="name">Physical Product Title Title will Be Here 99</h5>
-      
-   </div>
 
-</a>
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/physical-product-title-title-will-be-here-0131-test-bxf62830r9">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-        <div class="cup-img">
-      <span>8</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            <div class="sell-area">
-                  <span class="sale" style="background-color:#cf1d1d">Keyword1</span>
-                  <span class="sale" style="background-color:#c92be3">Keyword 2</span>
-          
-      </div>
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15708763046Vwtn82r.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$205.6 <del><small>$323.89</small></del></h4>
-      <h5 class="name">Physical Product Title Title will Be Here 0131 Test</h5>
-      
-   </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
 
-</a>
 
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/top-rated-product-title-will-be-here-according-to-your-wish-123-zia62030vj">
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-     <div class="cup-img">
-      <span>9</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876207Ri9VVzRq.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-      <h5 class="name">Top Rated product title will be here according to your ...</h5>
-      
-   </div>
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-</a>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
 
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/zain-digital-agency-and-startup-html-template-rxp8737lev">
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-     <div class="cup-img">
-      <span>10</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15702587732fKHlv77.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$443.59 <del><small>$810.29</small></del></h4>
-      <h5 class="name">Zain - Digital Agency and Startup HTML Template</h5>
-      
-   </div>
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-</a>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
 
-                                                                                                                                    </div></div><div class="owl-item active" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/belle-of-the-ball-glamour-makeup-mirror-gmm-m-bb-md">
+                                          <div class="item fifty_hover">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
 
-   <div class="cup-img">
-      <span>1</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631337539qGdIHcAu.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$702.7 <del><small>$702.7</small></del></h4>
-      <h5 class="name">Belle of the Ball - Glamour Makeup Mirror</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/samsung-galaxy-a71-sm-a715fds-4g-lte-128gb6gb-ram-android-prism-crush-silver-oit199uzy">
+                                             <a href="#">
+                                                <div class="cup-img">
+                                                   <span>1</span>
+                                                   <img src="{{asset('asset_old/front/images/cup.png')}}" alt="">
+                                                </div>
+                                                <div class="item-img">
+                                                   <img class="img-fluid" src="{{ asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
+                                                </div>
 
-   <div class="cup-img">
-      <span>2</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625292525EdEuymIE.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$336.56 <del><small></small></del></h4>
-      <h5 class="name">Samsung Galaxy A71 Sm-a715f/ds 4g LTE 128gb/6gb RAM And...</h5>
-      
-   </div>
-</a>
-                                                                                                                                    </div></div><div class="owl-item active" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/apple-iphone-12-128gb-black-lzq1987kx">
-
-   <div class="cup-img">
-      <span>3</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625291282hi2PzjmP.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$832.26 <del><small></small></del></h4>
-      <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/insight-incolor-anti-yellow-shampoo-400ml-insight034">
-
-     <div class="cup-img">
-      <span>4</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1623750814WakXx8wQ.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$22.18 <del><small></small></del></h4>
-      <h5 class="name">Insight Incolor Anti-Yellow Shampoo 400ml</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                    </div></div><div class="owl-item active" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/amiri-mwo4754ilu">
-
-   <div class="cup-img">
-      <span>5</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$42.25 <del><small></small></del></h4>
-      <h5 class="name">Amiri</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/microwave-4ya2707ln2">
-
-      <div class="cup-img">
-      <span>6</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16090828588tHsRfHG.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$14.08 <del><small></small></del></h4>
-      <h5 class="name">microwave</h5>
-      
-   </div>
-</a>
-                                                                                                                                    </div></div><div class="owl-item active" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/physical-product-title-title-will-be-here-99-tcv6794kxs">
-
-     <div class="cup-img">
-      <span>7</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876820rpkj3Z6U.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
-      <h5 class="name">Physical Product Title Title will Be Here 99</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/physical-product-title-title-will-be-here-0131-test-bxf62830r9">
-
-        <div class="cup-img">
-      <span>8</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            <div class="sell-area">
-                  <span class="sale" style="background-color:#cf1d1d">Keyword1</span>
-                  <span class="sale" style="background-color:#c92be3">Keyword 2</span>
-          
-      </div>
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15708763046Vwtn82r.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$205.6 <del><small>$323.89</small></del></h4>
-      <h5 class="name">Physical Product Title Title will Be Here 0131 Test</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                    </div></div><div class="owl-item active" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/top-rated-product-title-will-be-here-according-to-your-wish-123-zia62030vj">
-
-     <div class="cup-img">
-      <span>9</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876207Ri9VVzRq.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-      <h5 class="name">Top Rated product title will be here according to your ...</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/zain-digital-agency-and-startup-html-template-rxp8737lev">
-
-     <div class="cup-img">
-      <span>10</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15702587732fKHlv77.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$443.59 <del><small>$810.29</small></del></h4>
-      <h5 class="name">Zain - Digital Agency and Startup HTML Template</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/belle-of-the-ball-glamour-makeup-mirror-gmm-m-bb-md">
-
-   <div class="cup-img">
-      <span>1</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631337539qGdIHcAu.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$702.7 <del><small>$702.7</small></del></h4>
-      <h5 class="name">Belle of the Ball - Glamour Makeup Mirror</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/samsung-galaxy-a71-sm-a715fds-4g-lte-128gb6gb-ram-android-prism-crush-silver-oit199uzy">
-
-   <div class="cup-img">
-      <span>2</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625292525EdEuymIE.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$336.56 <del><small></small></del></h4>
-      <h5 class="name">Samsung Galaxy A71 Sm-a715f/ds 4g LTE 128gb/6gb RAM And...</h5>
-      
-   </div>
-</a>
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/apple-iphone-12-128gb-black-lzq1987kx">
-
-   <div class="cup-img">
-      <span>3</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625291282hi2PzjmP.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$832.26 <del><small></small></del></h4>
-      <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/insight-incolor-anti-yellow-shampoo-400ml-insight034">
-
-     <div class="cup-img">
-      <span>4</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1623750814WakXx8wQ.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$22.18 <del><small></small></del></h4>
-      <h5 class="name">Insight Incolor Anti-Yellow Shampoo 400ml</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/amiri-mwo4754ilu">
-
-   <div class="cup-img">
-      <span>5</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$42.25 <del><small></small></del></h4>
-      <h5 class="name">Amiri</h5>
-      
-   </div>
-</a>
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/microwave-4ya2707ln2">
-
-      <div class="cup-img">
-      <span>6</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16090828588tHsRfHG.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$14.08 <del><small></small></del></h4>
-      <h5 class="name">microwave</h5>
-      
-   </div>
-</a>
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/physical-product-title-title-will-be-here-99-tcv6794kxs">
-
-     <div class="cup-img">
-      <span>7</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876820rpkj3Z6U.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
-      <h5 class="name">Physical Product Title Title will Be Here 99</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/physical-product-title-title-will-be-here-0131-test-bxf62830r9">
-
-        <div class="cup-img">
-      <span>8</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-            <div class="sell-area">
-                  <span class="sale" style="background-color:#cf1d1d">Keyword1</span>
-                  <span class="sale" style="background-color:#c92be3">Keyword 2</span>
-          
-      </div>
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15708763046Vwtn82r.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$205.6 <del><small>$323.89</small></del></h4>
-      <h5 class="name">Physical Product Title Title will Be Here 0131 Test</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                    </div></div><div class="owl-item cloned" style="width: 165px; margin-right: 0px;"><div class="item fifty_hover">
-                                                                                          
-   <a href="//localhost/oracle_old/item/top-rated-product-title-will-be-here-according-to-your-wish-123-zia62030vj">
-
-     <div class="cup-img">
-      <span>9</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876207Ri9VVzRq.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-      <h5 class="name">Top Rated product title will be here according to your ...</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                       
-   <a href="//localhost/oracle_old/item/zain-digital-agency-and-startup-html-template-rxp8737lev">
-
-     <div class="cup-img">
-      <span>10</span>
-      <img src="assets/front/images/cup.png" alt="">
-   </div>
-   <div class="item-img">
-           
-      <img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15702587732fKHlv77.jpg" alt="">
-   </div>
-   <div class="info">
-      <div class="stars">
-         <div class="ratings">
-            <div class="empty-stars"></div>
-            <div class="full-stars" style="width:0%"></div>
-         </div>
-      </div>
-      <h4 class="price">$443.59 <del><small>$810.29</small></del></h4>
-      <h5 class="name">Zain - Digital Agency and Startup HTML Template</h5>
-      
-   </div>
-
-</a>
-
-                                                                                                                                    </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                                                <div class="info">
+                                                   <div class="stars">
+                                                      <div class="ratings">
+                                                         <div class="empty-stars"></div>
+                                                         <div class="full-stars" style="width:0%"></div>
+                                                      </div>
+                                                   </div>
+                                                   <h4 class="price">$832.26 <del><small></small></del></h4>
+                                                   <h5 class="name">Apple iPhone 12 - 128GB - Black</h5>
+                                                   
+                                                </div>
+                                             </a>
+                                          </div>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -11577,8 +11059,9 @@
                         </div>
                      </div>
                   </div>
-                  
-                                 </div>
+                  <!-- TOP 50 Today Section End-->
+   
+               </div>
             </div>
          </div>
       </div>
@@ -11586,8 +11069,9 @@
 </section>
 
 
+
 	<!-- section 5 -->
-    <div class="mb-2 mt-4 pt-1">
+   <!--  <div class="mb-2 mt-4 pt-1">
 	   <div class="container">
 	      <div class="homefurnishig homefurnishig1">
 	         
@@ -11599,1197 +11083,68 @@
 	        
 	      </div>
 	   </div>
-	</div>
+	</div> -->
 
-	<section class="topstories-new-sec mt-4 pt-2">
+<section class="topstories-new-sec mt-4 pt-2">
    <div class="container">
       <div class="topstories-new-inn">
          <div class="row">
             <div class="col-lg-12">
                <div class="most-view-prtabs">
-                  
-                 
+                  <!-- Most Viewed Start-->
+                 <!-- <div class="mostview">
+                     <h2 class="most-view-prtabs-text">MOST VIEWED & TOP RATED, PREMIUM PRODUCTS</h2>
+                  </div> -->
                   <div class="most-view-banner v-align-flex">
                      <div class="w-50">
                         <div class="viewd-slider">
-                           <div class="slider-img owl-carousel owl-theme owl-loaded">
-                              
-                              
-                              
-                              
-                           <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1980px, 0px, 0px); transition: all 0.25s ease 0s; width: 5280px;"><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="owl-item">
+                           <div class="slider-img">
+                              <div class="owl-item">
                                  <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Toys-and-Games.jpg">
+                                    <img src="{{asset('asset_old/images/banners/Fashion.jpg')}}"/>
                                  </a>
-                              </div></div><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="owl-item">
+                              </div>
+                              <div class="owl-item">
                                  <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Home-and-Kitchen.jpg">
+                                    <img src="{{asset('asset_old/images/banners/Health-and-Beauty.jpg')}}"/>
                                  </a>
-                              </div></div><div class="owl-item" style="width: 660px; margin-right: 0px;"><div class="owl-item">
+                              </div>
+                              <div class="owl-item">
                                  <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Fashion.jpg">
+                                    <img src="{{asset('asset_old/images/banners/Toys-and-Games.jpg')}}"/>
                                  </a>
-                              </div></div><div class="owl-item active" style="width: 660px; margin-right: 0px;"><div class="owl-item">
+                              </div>
+                              <div class="owl-item">
                                  <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Health-and-Beauty.jpg">
+                                    <img src="{{asset('asset_old/images/banners/Home-and-Kitchen.jpg')}}"/>
                                  </a>
-                              </div></div><div class="owl-item" style="width: 660px; margin-right: 0px;"><div class="owl-item">
-                                 <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Toys-and-Games.jpg">
-                                 </a>
-                              </div></div><div class="owl-item" style="width: 660px; margin-right: 0px;"><div class="owl-item">
-                                 <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Home-and-Kitchen.jpg">
-                                 </a>
-                              </div></div><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="owl-item">
-                                 <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Fashion.jpg">
-                                 </a>
-                              </div></div><div class="owl-item cloned" style="width: 660px; margin-right: 0px;"><div class="owl-item">
-                                 <a href="javascript:void(0)">
-                                    <img src="//devfo.pauldaughters.com/assets/images/banners/Health-and-Beauty.jpg">
-                                 </a>
-                              </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style="display: none;"></div></div></div>
+                              </div>
+                           </div>
                         </div>   
                      </div>
                      <div class="w-50">
                         <div class="col-50 m-col-100 pad-tb-30 pad-lr-6p m-pad-lr-20 t-align-l m-t-align-c">
                            <div class="freight fs-45x book lh-1em mrgn-b-20">
-                              <h2 class="most-view-prtabs-text">MOST VIEWED &amp; TOP RATED, PREMIUM PRODUCTS </h2>
+                              <h2 class="most-view-prtabs-text">MOST VIEWED & TOP RATED, PREMIUM PRODUCTS </h2>
                               <div class="short-des"><p>Oracle marketplace will take your online shopping to the next level. </p></div>
                               <div class="view-title">
                                  <h4>SHOP NEW IN</h4>
                                  <ul>
                                     <li><a href="javascript:void(0)">Fashion</a></li>
-                                    <li><a href="javascript:void(0)">Health &amp; Beauty</a></li>
-                                    <li><a href="javascript:void(0)">Toys &amp; Games</a></li>
-                                    <li><a href="javascript:void(0)">Home &amp; Kitchen Products</a></li>
+                                    <li><a href="javascript:void(0)">Health & Beauty</a></li>
+                                    <li><a href="javascript:void(0)">Toys & Games</a></li>
+                                    <li><a href="javascript:void(0)">Home & Kitchen Products</a></li>
                                  </ul>
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-
-                  
-                  <div class="all-pr-tabs" style="display:none;">
-                     <div class="all-pr-tabs-inner">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                           <li class="nav-item">
-                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home &amp; Kitchen Products</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" id="health-beauty-tab" data-toggle="tab" href="#health-beauty" role="tab" aria-controls="health-beauty" aria-selected="false">Health &amp; Beauty</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" id="fashion-tab" data-toggle="tab" href="#fashion" role="tab" aria-controls="fashion" aria-selected="false">Fashion</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" id="toys-and-games-tab" data-toggle="tab" href="#toys-and-games" role="tab" aria-controls="gift" aria-selected="false">Toys &amp; Games</a>
-                           </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                              <div class="tab-content-inner">
-                           
-                                 <div class="grid-pr-row">
-									<div class="row">
-										<div class="full-cols col-pr-tab">
-											<div class="sixcol-img">
-												<div class="row">
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/kitchen-and-dining">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1632576897BjVaOf0E.jpg" alt="">
-															<div class="tabc-price">
-															<p>$19.72 <small>$19.72</small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/kitchen-and-dining">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625303336Q9gjbHZL.jpg" alt="">
-															<div class="tabc-price">
-															<p>$21.12 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/kitchen-and-dining">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625303064ZBrh8M5V.jpg" alt="">
-															<div class="tabc-price">
-															<p>$336.56 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/kitchen-and-dining">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625302807ND3gKafo.jpg" alt="">
-															<div class="tabc-price">
-															<p>$15.05 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625300248qMb9Yqza.jpg" alt="">
-															<div class="tabc-price">
-															<p>$18.81 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625300127WAncYR6V.jpg" alt="">
-															<div class="tabc-price">
-															<p>$52.1 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625299495bW1mkgjM.jpg" alt="">
-															<div class="tabc-price">
-															<p>$2.06 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625299220EfSImei3.jpg" alt="">
-															<div class="tabc-price">
-															<p>$24.49 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/16252988150oggGcZn.jpg" alt="">
-															<div class="tabc-price">
-															<p>$11.27 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625298480BwXbdi57.jpg" alt="">
-															<div class="tabc-price">
-															<p>$11.27 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625297478z0jzCUVD.jpg" alt="">
-															<div class="tabc-price">
-															<p>$16.9 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-													                                       
-													<div class="sixx-cols col-pr-tab">
-														<div class="onetwocol-img">
-																							<a href="//localhost/oracle_old/category/home-and-garden/home-decor">
-																						<img src="//localhost/oracle_old/assets/images/thumbnails/1625297147FiyyJITW.jpg" alt="">
-															<div class="tabc-price">
-															<p>$11.84 <small></small></p>
-															</div>
-															</a>
-														</div>
-													</div>
-														
-													
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>    
-                            </div>
-                           </div>
-                           <div class="tab-pane fade" id="health-beauty" role="tabpanel" aria-labelledby="health-beauty-tab">
-                              <div class="tab-content-inner">
-                                 <div class="grid-pr-row">
-	<div class="row">
-		<div class="full-cols col-pr-tab">
-			<div class="sixcol-img">
-				<div class="row">
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/personal-care">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1631348956TNsREXFD.jpg" alt="">
-							<div class="tabc-price">
-							<p>$702.7 <small>$702.7</small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/bath-and-body">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1631346035Alt7AlGF.jpg" alt="">
-							<div class="tabc-price">
-							<p>$56.33 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/personal-care">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1631337541FRt1KhBO.jpg" alt="">
-							<div class="tabc-price">
-							<p>$773.11 <small>$773.11</small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/personal-care">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1631337540o6bRx1vS.jpg" alt="">
-							<div class="tabc-price">
-							<p>$378.81 <small>$378.81</small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/personal-care">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1631337539qGdIHcAu.jpg" alt="">
-							<div class="tabc-price">
-							<p>$702.7 <small>$702.7</small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/bath-and-body">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1630841284eSEQ46NH.jpg" alt="">
-							<div class="tabc-price">
-							<p>$56.33 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/hair">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1623750814WakXx8wQ.jpg" alt="">
-							<div class="tabc-price">
-							<p>$22.18 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/hair">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1623750548zhQ5WgrP.jpg" alt="">
-							<div class="tabc-price">
-							<p>$14.79 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/health-beauty/hair">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1623739830OjP7WAg6.jpg" alt="">
-							<div class="tabc-price">
-							<p>$30.56 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-						
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="fashion" role="tabpanel" aria-labelledby="fashion-tab">
-                              <div class="tab-content-inner">
-                                 <div class="grid-pr-row">
-	<div class="row">
-		<div class="full-cols col-pr-tab">
-			<div class="sixcol-img">
-				<div class="row">
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/fashion/mens-shoes">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1629012242DDvGUt5w.jpg" alt="">
-							<div class="tabc-price">
-							<p>$70.41 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/fashion/womens-clothing">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/16201255072bSSKtCP.jpg" alt="">
-							<div class="tabc-price">
-							<p>$90.13 <small>$98.58</small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/fashion/womens-clothing">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-							<div class="tabc-price">
-							<p>$42.25 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-					                                       
-					<div class="sixx-cols col-pr-tab">
-						<div class="onetwocol-img">
-															<a href="//localhost/oracle_old/category/fashion/womens-clothing">
-														<img src="//localhost/oracle_old/assets/images/thumbnails/1620124721mJSLDDUq.jpg" alt="">
-							<div class="tabc-price">
-							<p>$28.16 <small></small></p>
-							</div>
-							</a>
-						</div>
-					</div>
-						
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>                              </div>
-                           </div>
-                           <div class="tab-pane fade" id="toys-and-games" role="tabpanel" aria-labelledby="toys-and-games-tab">
-                              <div class="tab-content-inner">
-                                 <div class="grid-pr-row">
-	<div class="row">
-		<div class="full-cols col-pr-tab">
-			<div class="sixcol-img">
-				<div class="row">
-						
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</div>                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>  
-
-                   <div class="tr-job-posted section-padding home-made-mobile-view" style="display:none;">
-                     <div class="job-tab text-center mt-4">
-                        <div class="container">
-                           <ul class="nav nav-tabs justify-content-center ul-text" role="tablist">
-                              <li role="presentation" class="active">
-                                 <a class="active show" href="#hot-jobs1" aria-controls="hot-jobs1" role="tab" data-toggle="tab" aria-selected="true">Home &amp; Kitchen Products</a>
-                              </li>
-                              <li role="presentation">
-                                 <a href="#popular-jobs1" aria-controls="popular-jobs1" role="tab" data-toggle="tab" class="" aria-selected="false">Fashion  </a>
-                              </li>
-                              <li role="presentation">
-                                 <a href="#recent-jobs1" aria-controls="recent-jobs1" role="tab" data-toggle="tab" class="" aria-selected="false">Health &amp; Beauty</a>
-                              </li>
-                              
-                              <li role="presentation">
-                                 <a href="#popular-jobs2" aria-controls="popular-jobs2" role="tab" data-toggle="tab" class="" aria-selected="false">Toys &amp; Games </a>
-                              </li>
-                           
-                           </ul>
-                        </div>
-                        <div class="tab-content text-left">
-                           <div role="tabpanel" class="tab-pane fade active show" id="hot-jobs1">
-                              <div class="row">
-                                 <div class="col-lg-12 rem-padding">
-                                    <div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-                                                                           <div class="owl-stage-outer"><div class="owl-stage"></div></div></div>
-                                 </div>
-                              </div>
-                           </div>
-                           
-                           <div role="tabpanel" class="tab-pane fade in" id="popular-jobs1">
-                              <div class="row">
-                                 <div class="col-lg-12 rem-padding">
-                                    <div class="trending-item-slider owl-carousel owl-theme owl-hidden owl-loaded">
-                                                                              
-																				
-
-
-
-								                                                                              
-																				
-
-
-
-								                                                                              
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                                                              
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                                                              
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                                                              
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                                                              
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                                                              
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                                                           <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-100px, 0px, 0px); transition: all 0s ease 0s; width: 360px;"><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/electric/television" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570085654jeAoOOo6.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$511.61 <del><small>$511.61</small></del></h4>
-
-														<h5 class="name">Zain - Digital Agency and Startup HTML Template</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1568025818tm9YHIHp.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/furniture/living-room-furniture" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625254615SA8XYsMG.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$73.93 <del><small>$110.9</small></del></h4>
-
-														<h5 class="name">2 Seater Sofa</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/furniture/living-room-furniture" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625254836EfCfAsgp.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$73.93 <del><small>$110.9</small></del></h4>
-
-														<h5 class="name">L Shape Corner Sectional Sofa</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/books-and-office" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625255149CKKZvIau.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$73.93 <del><small>$110.9</small></del></h4>
-
-														<h5 class="name">Carved  sofa set</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/home-and-garden/home-decor" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16252988150oggGcZn.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$11.27 <del><small></small></del></h4>
-
-														<h5 class="name">Home Centre Redolance Raspberry Flower Arrangement in G...</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/fashion/womens-clothing" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$42.25 <del><small></small></del></h4>
-
-														<h5 class="name">Amiri</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/beauty-and-personal-care" class="item">
-										
-											<div class="item-img">
-
-												
-													<div class="sell-area">
-
-													
-														<span class="sale" style="background-color:#cf1d1d">Keyword1</span>
-
-														
-														<span class="sale" style="background-color:#c92be3">Keyword 2</span>
-
-														 
-
-													</div>
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15708763046Vwtn82r.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$205.6 <del><small>$323.89</small></del></h4>
-
-														<h5 class="name">Physical Product Title Title will Be Here 0131 Test</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/electric/television" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570085654jeAoOOo6.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$511.61 <del><small>$511.61</small></del></h4>
-
-														<h5 class="name">Zain - Digital Agency and Startup HTML Template</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1568025818tm9YHIHp.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/furniture/living-room-furniture" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625254615SA8XYsMG.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$73.93 <del><small>$110.9</small></del></h4>
-
-														<h5 class="name">2 Seater Sofa</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/furniture/living-room-furniture" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625254836EfCfAsgp.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$73.93 <del><small>$110.9</small></del></h4>
-
-														<h5 class="name">L Shape Corner Sectional Sofa</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/books-and-office" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625255149CKKZvIau.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$73.93 <del><small>$110.9</small></del></h4>
-
-														<h5 class="name">Carved  sofa set</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/home-and-garden/home-decor" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16252988150oggGcZn.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$11.27 <del><small></small></del></h4>
-
-														<h5 class="name">Home Centre Redolance Raspberry Flower Arrangement in G...</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/fashion/womens-clothing" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$42.25 <del><small></small></del></h4>
-
-														<h5 class="name">Amiri</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/beauty-and-personal-care" class="item">
-										
-											<div class="item-img">
-
-												
-													<div class="sell-area">
-
-													
-														<span class="sale" style="background-color:#cf1d1d">Keyword1</span>
-
-														
-														<span class="sale" style="background-color:#c92be3">Keyword 2</span>
-
-														 
-
-													</div>
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/15708763046Vwtn82r.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$205.6 <del><small>$323.89</small></del></h4>
-
-														<h5 class="name">Physical Product Title Title will Be Here 0131 Test</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/electric/television" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570085654jeAoOOo6.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$511.61 <del><small>$511.61</small></del></h4>
-
-														<h5 class="name">Zain - Digital Agency and Startup HTML Template</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 20px; margin-right: 0px;"><a href="//localhost/oracle_old/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1568025818tm9YHIHp.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
-                                 </div>
-                              </div>
-                               
-                           </div>
-                           
-                           <div role="tabpanel" class="tab-pane fade in" id="recent-jobs1">
-                              <div class="row">
-                                 <div class="col-lg-12 rem-padding">
-                                    <div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-                                                                           <div class="owl-stage-outer"><div class="owl-stage"></div></div></div>
-                                 </div>
-                              </div>
-                               
-                           </div>
-                           
-                           
-                           <div role="tabpanel" class="tab-pane fade in" id="popular-jobs2">
-                              <div class="row">
-                                 <div class="col-lg-12 rem-padding">
-                                    <div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-                                                                           <div class="owl-stage-outer"><div class="owl-stage"></div></div></div>
-                                 </div>
-                              </div>
-                               
-                           </div>
-                           
-                           
-                           
-                        </div>
-                     </div>
-                              
-                  </div>
                </div>
             </div>
          </div>
       </div>
-</div></section>
+</section>
 
 <!-- section 6 Popular Gifts -->
 <section id="tw-column-add">
@@ -12799,7 +11154,7 @@
             <div class="col-md-7">
                <div class="inner-section">
                   <div class="column-title"><a href="#"><h2 class="section-title">Popular Gift Ideas</h2></a></div>
-                  <a href="#"><img src="//devfo.pauldaughters.com/assets/images/banners/gift.jpg"></a>
+                  <a href="#"><img src="{{asset('asset_old/images/banners/gift.jpg')}}"></a>
                   <div class="column-des">
                      <h3 class="add-sub-title">Attention Gift Ideas</h3>
                      <p>We’ve got the glow-down on the best of the best skincare including Crème De La Mer, Sisley Black Rose Mask, Guerlain Abeille Royale Serum and more, these are the skin saviours you need to find your glow this Winter.</p>
@@ -12823,9 +11178,9 @@
                </div>
             </div>
             <div class="col-md-5">
-            <div class="inner-section">
+               <div class="inner-section">
                   <div class="column-title"><a href="#"><h2 class="section-title">A SPECIAL GIFT</h2></a></div>
-                  <a href="#"><img src="//devfo.pauldaughters.com/assets/images/subcategories/5361c069-1502-4586-9c62-39b91753c8a3.jpeg"></a>
+                  <a href="#"><img src="{{asset('asset_old/images/subcategories/5361c069-1502-4586-9c62-39b91753c8a3.jpeg')}}"></a>
                   <div class="column-des">
                      <h3 class="add-sub-title">Attention Glow Getters</h3>
                      <p>We’ve got the glow-down on the best of the best skincare including Crème De La Mer, Sisley Black Rose Mask, Guerlain Abeille Royale Serum and more, these are the skin saviours you need to find your glow this Winter.</p>
@@ -12841,86 +11196,169 @@
                      </div>
                   </div>
                </div>
-         </div>
-      </div>   
+            </div>
+         </div>   
+      </div>
    </div>
-</div></section>
+</section>
 
 
 <!-- section 7  used product slider -->
-<section class="trending pt-4 mb-3">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 rem-padding">
-				<div class="section-top">
-					<h2 class="section-title">
-					Used Products
-					</h2>
-					<a href="//localhost/oracle_old/auction" class="link">View All</a>
-				</div>
-			</div>
-		</div>
-	</div>
-		<div class="row mt-3">
-			<div class="col-lg-12 rem-padding">
-				<div class="container">
-					<div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-										
-																				
+<section  class="trending pt-4 mb-3">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 rem-padding">
+            <div class="section-top">
+               <h2 class="section-title">
+               Used Products
+               </h2>
+               <a href="#" class="link">View All</a>
+            </div>
+         </div>
+      </div>
+   </div>
+      <div class="row mt-3" >
+         <div class="col-lg-12 rem-padding">
+            <div class="container">
+               <div class="trending-item-slider">
+               
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
 
 
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
 
-								
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
 
-                                
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
 
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
 
-																		<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 264px;"><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/beauty-and-personal-care/bags" class="item">
-										
-											<div class="item-img">
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
 
-												
-													
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1570876503XgLFnuQi.jpg" alt="">
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
 
-											</div>
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-											<div class="info">
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
 
-												<div class="stars">
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-                                                  <div class="ratings">
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
 
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
-
-														<h5 class="name">Physical Product Title Title will Be Here 102</h5>
-
-													
-											</div>
-
-										</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
-				</div>
-			</div>
-		</div>
+               </div>
+            </div>
+         </div>
+      </div>
 </section>
 <!-- section 8  Smart watch banner -->
 <div class="best-seller-after-banner">
    <div class="container">
       <div class="homefurnishig pt-1">
-         <a href="">
-            <img src="//localhost/oracle_old/assets/images/banners/1655109065Smart-Watch.jpg" alt="" class="desktop-banner">
-            <img src="//localhost/oracle_old/assets/images/banners/1655372994352x144smartwatch.jpg" alt="" class="mobile-banner"> 
+         <a href="#">
+            <img src="{{asset('asset_old/images/banners/1655109065Smart-Watch.jpg')}}" alt="" class="desktop-banner">
+            <img src="{{asset('asset_old/images/banners/1655372994352x144smartwatch.jpg')}}" alt="" class="mobile-banner"> 
          </a>
       </div>
    </div>
@@ -12940,20 +11378,20 @@
                             <h3 class="product-title">CLICK SHOP NOW FOR ALL DEAL OF THE PRODUCT</h3>
                             <div class="product-price">
 
-                                <div class="on-sale"><span>50</span><span>% off</span></div>
+                                <div class="on-sale" style="background-color: #424a4d !important" ><span>50</span><span>% off</span></div>
                             </div>
                             <div class="font-fifteen">
                                 <p>Donec condimentum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus pretium sapien, in pulvinar ipsum molestie id. Aliquam erat volutpat. Duis quam tellus, ullamcorper.....</p>
                             </div>
-                            <div class="time-count time-box text-center my-30 flex-between w-75" data-countdown="2022-03-31"><ul><li><span>00</span><span>Day</span></li> <li><span>00</span><span>Hour</span></li> <li><span>00</span><span>Min</span></li> <li><span>00</span><span>Sec</span></li></ul></div>
-                            <a href="http://localhost/oracle-marketplace/category?type=flash" class="btn btn-dark text-uppercase rounded-0">Shop Now</a>
+                            <div class="time-count time-box text-center my-30 flex-between w-75"><ul><li><span>00</span><span>Day</span></li> <li><span>00</span><span>Hour</span></li> <li><span>00</span><span>Min</span></li> <li><span>00</span><span>Sec</span></li></ul></div>
+                            <a href="#" class="btn btn-dark text-uppercase rounded-0">Shop Now</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-5 offset-xl-1">
                
-                <div class="xs-mt-30"><img src="http://localhost/oracle-marketplace/assets/images/164743040383png.png" alt=""></div>
+                <div class="xs-mt-30"><img src="{{asset('assets/images/164743040383png.png')}}" alt=""></div>
 
             </div>
         </div>
@@ -12967,19 +11405,19 @@
                   <div class="col-lg-6 remove-padding">
             <div class="left m-1">
                <a class="banner-effect1" href="//devfo.pauldaughters.com/products/filter/sale" target="_blank">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648708kitchen-utensils 2.jpg" alt="" class="desktop-banner">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648708kitchen-utensils 2.jpg" alt="" class="mobile-banner"> 
+                  <img src="{{asset('asset_old/images/banners/1644648708kitchen-utensils 2.jpg')}}" alt="" class="desktop-banner">
+                  <img src="{{asset('asset_old/images/banners/1644648708kitchen-utensils 2.jpg')}}" alt="" class="mobile-banner"> 
                </a>
-               <a href="//devfo.pauldaughters.com/products/filter/sale" target="_blank" class="btn shop-now1 ">SHOP NOW</a>
+               <a href="#" target="_blank" class="btn shop-now1 ">SHOP NOW</a>
             </div>
          </div>
                   <div class="col-lg-6 remove-padding">
             <div class="left m-1">
                <a class="banner-effect1" href="" target="_blank">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648847shoes banner.jpg" alt="" class="desktop-banner">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648847shoes banner.jpg" alt="" class="mobile-banner"> 
+                  <img src="{{asset('asset_old/images/banners/1644648847shoes banner.jpg')}}" alt="" class="desktop-banner">
+                  <img src="{{asset('asset_old/images/banners/1644648847shoes banner.jpg')}}" alt="" class="mobile-banner"> 
                </a>
-               <a href="" target="_blank" class="btn shop-now1 ">SHOP NOW</a>
+               <a href="#" target="_blank" class="btn shop-now1 ">SHOP NOW</a>
             </div>
          </div>
                </div>
@@ -12997,7 +11435,7 @@
                <h2 class="section-title">
                   Flash Deal
                </h2>
-               <a href="//localhost/oracle_old/products/filter/discount" class="link">View All</a>
+               <a href="#" class="link">View All</a>
             </div>
          </div>
       </div>
@@ -13039,7 +11477,7 @@
 						
 							
 
-						<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1632584534g1tc2bS5.jpg" alt="">
+						<img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632584534g1tc2bS5.jpg')}}" alt="">
 
 					</div>
 
@@ -13073,7 +11511,7 @@
 
 		</div>
 
-				</a></div><div class="owl-item active" style="width: 256px; margin-right: 10px;"><a href="//localhost/oracle_old/item/belle-of-the-ball-glamour-makeup-mirror-gmm-m-bb-md" class="item">
+				</a></div><div class="owl-item active" style="width: 256px; margin-right: 10px;"><a href="#" class="item">
 								
 				
 					<div class="item-img">
@@ -13081,7 +11519,7 @@
 						
 							
 
-						<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631337539qGdIHcAu.jpg" alt="">
+						<img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1631337539qGdIHcAu.jpg')}}" alt="">
 
 					</div>
 
@@ -13130,42 +11568,42 @@
                   <div class="col-lg-3 rem-padding col-md-6 mb-4">
             <div class="left">
                
-               <a class="banner-effect" href="//devfo.pauldaughters.com/category/fashion/womens-clothing" target="_blank">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648314Desktop_7769_1643308071079.jpg" alt="" class="desktop-banner w-100">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648314Desktop_7769_1643308071079.jpg" alt="" class="mobile-banner w-100"> 
+               <a class="banner-effect" href="#" target="_blank">
+                  <img src="{{asset('asset_old/images/banners/1644648314Desktop_7769_1643308071079.jpg')}}" alt="" class="desktop-banner w-100">
+                  <img src="{{asset('asset_old/images/banners/1644648314Desktop_7769_1643308071079.jpg')}}" alt="" class="mobile-banner w-100"> 
                </a>
             </div>
-            <div class="trending-item-slider-text"><a href="">SHOP NOW</a></div>
+            <div class="trending-item-slider-text"><a href="#">SHOP NOW</a></div>
          </div>
                   <div class="col-lg-3 rem-padding col-md-6 mb-4">
             <div class="left">
                
-               <a class="banner-effect" href="//devfo.pauldaughters.com/category/fashion/womens-clothing" target="_blank">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648285Desktop_7760_1643308578255.jpg" alt="" class="desktop-banner w-100">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648285Desktop_7760_1643308578255.jpg" alt="" class="mobile-banner w-100"> 
+               <a class="banner-effect" href="#" target="_blank">
+                  <img src="{{asset('asset_old/images/banners/1644648285Desktop_7760_1643308578255.jpg')}}" alt="" class="desktop-banner w-100">
+                  <img src="{{asset('asset_old/images/banners/1644648285Desktop_7760_1643308578255.jpg')}}" alt="" class="mobile-banner w-100"> 
                </a>
             </div>
-            <div class="trending-item-slider-text"><a href="">SHOP NOW</a></div>
+            <div class="trending-item-slider-text"><a href="#">SHOP NOW</a></div>
          </div>
                   <div class="col-lg-3 rem-padding col-md-6 mb-4">
             <div class="left">
                
-               <a class="banner-effect" href="//devfo.pauldaughters.com/category/fashion/womens-clothing" target="_blank">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648266Desktop_7767_1643307943518.jpg" alt="" class="desktop-banner w-100">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648266Desktop_7767_1643307943518.jpg" alt="" class="mobile-banner w-100"> 
+               <a class="banner-effect" href="#" target="_blank">
+                  <img src="{{asset('asset_old/images/banners/1644648266Desktop_7767_1643307943518.jpg')}}" alt="" class="desktop-banner w-100">
+                  <img src="{{asset('asset_old/images/banners/1644648266Desktop_7767_1643307943518.jpg')}}" alt="" class="mobile-banner w-100"> 
                </a>
             </div>
-            <div class="trending-item-slider-text"><a href="">SHOP NOW</a></div>
+            <div class="trending-item-slider-text"><a href="#">SHOP NOW</a></div>
          </div>
                   <div class="col-lg-3 rem-padding col-md-6 mb-4">
             <div class="left">
                
-               <a class="banner-effect" href="//devfo.pauldaughters.com/category/fashion/womens-clothing" target="_blank">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648244Desktop_7761_1643307357980.jpg" alt="" class="desktop-banner w-100">
-                  <img src="//localhost/oracle_old/assets/images/banners/1644648244Desktop_7761_1643307357980.jpg" alt="" class="mobile-banner w-100"> 
+               <a class="banner-effect" href="#" target="_blank">
+                  <img src="{{asset('asset_old/images/banners/1644648244Desktop_7761_1643307357980.jpg')}}" alt="" class="desktop-banner w-100">
+                  <img src="{{asset('asset_old/images/banners/1644648244Desktop_7761_1643307357980.jpg')}}" alt="" class="mobile-banner w-100"> 
                </a>
             </div>
-            <div class="trending-item-slider-text"><a href="">SHOP NOW</a></div>
+            <div class="trending-item-slider-text"><a href="#">SHOP NOW</a></div>
          </div>
                </div>
          </section>
@@ -13173,132 +11611,71 @@
 
 <!-- 13 section  Best Sellers Slider  -->
 
+
 <section class="trending pt-2 mb-4">
    <div class="container">
       <div class="row">
          <div class="col-lg-12 rem-padding">
             <div class="section-top">
                <h2 class="section-title">
-                  Best Seller
+                   Best Seller
                </h2>
-               <a href="//localhost/oracle_old/products/filter/best" class="link">View All</a>
+               <a href="#" class="link">View All</a>
             </div>
          </div>
       </div>
-	</div>
+   </div>
       <div class="row">
          <div class="col-lg-12 rem-padding">
             <div class="container">
-               <div class="item-slider-childcategories owl-carousel owl-theme owl-responsive-1200 owl-loaded">
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                 <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1330px, 0px, 0px); transition: all 0s ease 0s; width: 4211.67px;"><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Makeup-Bags-and-Cases" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440816Makeupbags.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Power-Tools" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440860PowerTools.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Luggage" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440168Luggage.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Fitness-Technology" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439676FitnessTechnology.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/athletic-shoes" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440994SportsShoes.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/headphones" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439743Headphones.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Shampoo-and-Conditioner" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440904Shampoo&amp;Conditioner.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Makeup-Bags-and-Cases" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440816Makeupbags.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Power-Tools" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440860PowerTools.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Luggage" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440168Luggage.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Fitness-Technology" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439676FitnessTechnology.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/athletic-shoes" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440994SportsShoes.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/headphones" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439743Headphones.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Shampoo-and-Conditioner" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440904Shampoo&amp;Conditioner.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Makeup-Bags-and-Cases" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440816Makeupbags.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Power-Tools" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440860PowerTools.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Luggage" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440168Luggage.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Fitness-Technology" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439676FitnessTechnology.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/athletic-shoes" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440994SportsShoes.jpg" alt="">
-        
-    </div>
-</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-chevron-left"></i></div><div class="owl-next" style=""><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+               <div class="item-slider-childcategories">
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+                  <a href="#" class="single-category item">
+                      <div class="item-img">
+                          <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440904Shampoo&Conditioner.jpg')}}" alt="">
+                      </div>
+                  </a>
+
+               </div>
             </div>
          </div>
       </div>
    
 </section>
-
 
 
 <!-- 14 section  New Arrivals -->
@@ -13307,7 +11684,7 @@
    <div class="container">
       <div class="section-top">
          <h2 class="section-title">New Arrival</h2>
-         <a href="//devfo.pauldaughters.com/products/filter/latest" class="link">View All</a>
+         <a href="#" class="link">View All</a>
       </div>
    </div>
    <div class="container">
@@ -13324,475 +11701,175 @@
             </div>
             <div class="col-lg-8">
                <div class="newproduct-sec-prd hot-and-new-item">
-                  <div id="new-item-slider" class="new-item-slider owl-carousel owl-theme owl-responsive-1000 owl-loaded">
-                                          
-																				
-
-
-
-								                                          
-																				
-
-
-
-								                                          
-																				
-
-
-
-								                                          
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                          
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                          
-																				
-
-
-
-								
-
-
-                                
-
-
-
-								                                       <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-828px, 0px, 0px); transition: all 0s ease 0s; width: 3312px;"><div class="owl-item cloned" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/15680254230iXcasMb.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													<div class="sell-area">
-
-													
-														<span class="sale" style="background-color:#42c406">Keyword1</span>
-
-														
-														<span class="sale" style="background-color:#f00505">Keyword 2</span>
-
-														 
-
-													</div>
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1568025531ckSl3TVR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/beauty-and-personal-care/bags" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1568026368CzWwfWLG.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
-
-														<h5 class="name">Physical Product Title Title will Be Here 100</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/electric/computers" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1632584534g1tc2bS5.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$2393.97 <del><small>$2393.97</small></del></h4>
-
-														<h5 class="name">ThinkPad X380 Yoga [hidden product attributes]</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/home-and-garden/home-decor" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1625299220EfSImei3.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$24.49 <del><small></small></del></h4>
-
-														<h5 class="name">Electomania Paint by Numbers for Adults with Frame, 16 ...</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/fashion/womens-clothing" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$42.25 <del><small></small></del></h4>
-
-														<h5 class="name">Amiri</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/15680254230iXcasMb.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/beauty-and-personal-care/accessories" class="item">
-										
-											<div class="item-img">
-
-												
-													<div class="sell-area">
-
-													
-														<span class="sale" style="background-color:#42c406">Keyword1</span>
-
-														
-														<span class="sale" style="background-color:#f00505">Keyword 2</span>
-
-														 
-
-													</div>
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1568025531ckSl3TVR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$147.86 <del><small>$739.32</small></del></h4>
-
-														<h5 class="name">Top Rated product title will be here according to your ...</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/beauty-and-personal-care/bags" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1568026368CzWwfWLG.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
-
-														<h5 class="name">Physical Product Title Title will Be Here 100</h5>
-
-													
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/electric/computers" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1632584534g1tc2bS5.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$2393.97 <del><small>$2393.97</small></del></h4>
-
-														<h5 class="name">ThinkPad X380 Yoga [hidden product attributes]</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/home-and-garden/home-decor" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1625299220EfSImei3.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$24.49 <del><small></small></del></h4>
-
-														<h5 class="name">Electomania Paint by Numbers for Adults with Frame, 16 ...</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 266px; margin-right: 10px;"><a href="//devfo.pauldaughters.com/category/fashion/womens-clothing" class="item">
-										
-											<div class="item-img">
-
-												
-													
-
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1620124934Tra2wkB5.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$42.25 <del><small></small></del></h4>
-
-														<h5 class="name">Amiri</h5>
-
-														
-
-											</div>
-
-										</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-chevron-left"></i></div><div class="owl-next" style=""><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+                  <div id="new-item-slider" class=" new-item-slider">
+                        
+                    <a href="#" class="item">
+                     <div class="item-img">
+
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632584534g1tc2bS5.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632584534g1tc2bS5.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632584534g1tc2bS5.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632584534g1tc2bS5.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1570876503XgLFnuQi.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                    
+                  </div>
                </div>
             </div>
          </div>
@@ -13802,526 +11879,7 @@
 
 <!-- 15 section  Top Products -->
 
-<div class="full-row">
-    <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <span class="text-secondary pb-2 d-table tagline mx-auto text-uppercase text-center">Top Products</span>
-                    <h2 class="main-title mb-4 text-center text-secondary">Best Selling Products</h2>
 
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-
-        <div class="products product-style-1 owl-mx-15">
-                        <div class="four-carousel owl-carousel dot-disable nav-arrow-middle-show e-title-general e-title-hover-primary e-image-bg-light e-info-center e-title-general e-title-hover-primary e-image-bg-light e-hover-image-zoom e-info-center owl-loaded owl-drag">
-
-        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 3741px;"><div class="owl-item active" style="width: 310.75px; margin-right: 1px;"><div class="item">
-            <div class="product type-product">
-                <div class="product-wrapper">
-                <div class="product-image">
-                    <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-99-tcv6794kxs1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639377189b67fhAxf.jpg" style=""></a>
-                                        <div class="on-sale">- 49%</div>
-                    
-                    <div class="hover-area">
-                                                <div class="cart-button">
-                        <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/178" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                        </div>
-                        <div class="cart-button buynow">
-                            <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/178" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                        </div>
-                                                            <div class="wishlist-button">
-                        <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                        </div>
-                                    <div class="compare-button">
-                        <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/178" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-99-tcv6794kxs1">Physical Product Title Title will Be Here 99</a></h3>
-                    <div class="product-price">
-                        <div class="price">
-                            <ins>110$ </ins>
-                            <del>215$</del>
-                        </div>
-                    </div>
-                    <div class="shipping-feed-back">
-                        <div class="star-rating">
-                            <div class="rating-wrap">
-                            <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        </div><div class="owl-item active" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013376Q0pmYfnP.jpg" style=""></a>
-                                    <div class="on-sale">- 48%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/175" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/175" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/175" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/physical-product-title-title-will-be-here-102-9gn6494iun1">Physical Product Title Title will Be Here 102</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>115$ </ins>
-                        <del>220$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item active" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/revel-real-estate-huuu-tbs53803yh1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013500IhrIbnTy.jpg" style=""></a>
-                                    <div class="on-sale">- 12%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/168" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/168" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/168" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/revel-real-estate-huuu-tbs53803yh1">Revel - Real Estate Huuu</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>335$ </ins>
-                        <del>382.25$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item active" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737le1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1648013669ZDg86Ncm.jpg" style=""></a>
-                                    <div class="on-sale">- 45%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/165" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/165" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/165" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737le1">Zain - Digital Agency and Startup HTML Template</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>320$ </ins>
-                        <del>580.40$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737lev1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639378035XJWgisPU.jpg" style=""></a>
-                                    <div class="on-sale">- 45%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/164" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/164" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/164" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-rxp8737lev1">Zain - Digital Agency and Startup HTML Template</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>321$ </ins>
-                        <del>581.40$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-toc5844n0t1" class="woocommerce-LoopProduct-link"><img class="lazy" alt="Product Image" src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639378156sxEgX2Pk.jpg" style=""></a>
-                            <div class="product-variations">
-                                <span class="active sale"><a href="#" style="background-color: #000000">Test</a></span>
-                                <span class="active sale"><a href="#" style="background-color: #d14141">test1</a></span>
-                            </div>
-                                    <div class="on-sale">- 8%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/162" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/162" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/162" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/zain-digital-agency-and-startup-html-template-toc5844n0t1">Zain - Digital Agency and Startup HTML Template</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>570$ </ins>
-                        <del>622.50$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/revel-real-estate-html-template-d2e6433yi01" class="woocommerce-LoopProduct-link"><img class="lazy" data-src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639378418BxWim5Uq.jpg" alt="Product Image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-                                    <div class="on-sale">- 23%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/161" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/161" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/161" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/revel-real-estate-html-template-d2e6433yi01">Revel - Real Estate HTML Template</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>350$ </ins>
-                        <del>455$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/32-napco-dglass-ultra-slim-hd-led-tv-es700e-3uz9903ofs1" class="woocommerce-LoopProduct-link"><img class="lazy" data-src="http://localhost/oracle-marketplace/assets/images/thumbnails/1639392738TGJsX6up.jpg" alt="Product Image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-                                    <div class="on-sale">- 37%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/135" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/135" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/135" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/32-napco-dglass-ultra-slim-hd-led-tv-es700e-3uz9903ofs1">32 ''NAPCO D/GLASS ULTRA SLIM HD lED TV ES700E</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>36.50$ </ins>
-                        <del>57.50$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-122-pr502jsv1" class="woocommerce-LoopProduct-link"><img class="lazy" data-src="http://localhost/oracle-marketplace/assets/images/thumbnails/1577617600WtjwVRxD.jpg" alt="Product Image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-                                    <div class="on-sale">- 47%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/122" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/122" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/122" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-122-pr502jsv1">Affiliate Product Title will Be Here. Affiliate Pr...</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>58.50$ </ins>
-                        <del>111$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-121-pr501jsv1" class="woocommerce-LoopProduct-link"><img class="lazy" data-src="http://localhost/oracle-marketplace/assets/images/thumbnails/1577617608MSgUIoEZ.jpg" alt="Product Image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-                                    <div class="on-sale">- 47%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/121" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/121" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/121" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-121-pr501jsv1">Affiliate Product Title will Be Here. Affiliate Pr...</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>58.50$ </ins>
-                        <del>111$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-        <div class="product type-product">
-            <div class="product-wrapper">
-            <div class="product-image">
-                <a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-120-pr500jsv1" class="woocommerce-LoopProduct-link"><img class="lazy" data-src="http://localhost/oracle-marketplace/assets/images/thumbnails/1577617616ol3RAb6T.jpg" alt="Product Image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-                                    <div class="on-sale">- 47%</div>
-                
-                <div class="hover-area">
-                                            <div class="cart-button">
-                    <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/120" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                    </div>
-                    <div class="cart-button buynow">
-                        <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/120" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                    </div>
-                                                        <div class="wishlist-button">
-                    <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                    </div>
-                                <div class="compare-button">
-                    <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/120" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-info">
-                <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-120-pr500jsv1">Affiliate Product Title will Be Here. Affiliate Pr...</a></h3>
-                <div class="product-price">
-                    <div class="price">
-                        <ins>58.50$ </ins>
-                        <del>111$</del>
-                    </div>
-                </div>
-                <div class="shipping-feed-back">
-                    <div class="star-rating">
-                        <div class="rating-wrap">
-                        <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-                            </div></div><div class="owl-item" style="width: 310.75px; margin-right: 1px;"><div class="item">
-                                <div class="product type-product">
-        <div class="product-wrapper">
-        <div class="product-image">
-            <a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-1-pr499jsv1" class="woocommerce-LoopProduct-link"><img class="lazy" data-src="http://localhost/oracle-marketplace/assets/images/thumbnails/1577617624IKzGBL9L.jpg" alt="Product Image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-                                <div class="on-sale">- 47%</div>
-            
-            <div class="hover-area">
-                                        <div class="cart-button">
-                <a href="javascript:;" data-href="http://localhost/oracle-marketplace/addcart/119" class="add-cart button add_to_cart_button" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add To Cart" aria-label="Add To Cart"></a>
-                </div>
-                <div class="cart-button buynow">
-                    <a class="button add_to_cart_button add-to-cart-quick" href="javascript:;" data-bs-toggle="tooltip" data-href="http://localhost/oracle-marketplace/addtocart/119" data-bs-placement="right" title="Buy Now" data-bs-original-title="Buy Now"></a>
-                </div>
-                                                    <div class="wishlist-button">
-                <a class="add_to_wishlist button add_to_cart_button" href="http://localhost/oracle-marketplace/user/login" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Add to Wishlist" aria-label="Add to Wishlist">Wishlist</a>
-                </div>
-                            <div class="compare-button">
-                <a class="compare button add_to_cart_button" data-href="http://localhost/oracle-marketplace/item/compare/add/119" href="javascrit:;" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Compare" aria-label="Compare">Compare</a>
-                </div>
-            </div>
-        </div>
-        <div class="product-info">
-            <h3 class="product-title"><a href="http://localhost/oracle-marketplace/item/affiliate-product-title-will-be-here-affiliate-product-title-will-be-here-1-pr499jsv1">Affiliate Product Title will Be Here. Affiliate Pr...</a></h3>
-            <div class="product-price">
-                <div class="price">
-                    <ins>58.50$ </ins>
-                    <del>111$</del>
-                </div>
-            </div>
-            <div class="shipping-feed-back">
-                <div class="star-rating">
-                    <div class="rating-wrap">
-                    <p><i class="fas fa-star"></i><span> 0 (0)</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-                    </div></div></div></div>
-                        <div class="owl-nav">
-                            <button type="button" role="presentation" class="owl-prev disabled">
-                                <div class="nav-btn prev-slide"><i class="fas fa-chevron-left"></i><span>Prev</span>
-                                </div>
-                            </button>
-                            <button type="button" role="presentation" class="owl-next">
-                                <div class="nav-btn next-slide"><span>Next</span><i class="fas fa-chevron-right"></i>
-                                </div>
-                            </button>
-                        </div>
-                        <div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- 16 section  Kitchen Banner  -->
 <div class="mt-3">
@@ -14329,8 +11887,8 @@
       <div class="homefurnishig">
         
          <a class="banner-effect" href="//devfo.pauldaughters.com/products/filter/sale" target="_blank">
-            <img src="//localhost/oracle_old/assets/images/banners/1632662607kitchen-banner.png" alt="" class="desktop-banner">
-            <img src="//localhost/oracle_old/assets/images/banners/1632662607kitchen-banner.png" alt="" class="mobile-banner "> 
+            <img src="{{asset('asset_old/images/banners/1632662607kitchen-banner.png')}}" alt="" class="desktop-banner">
+            <img src="{{asset('asset_old/images/banners/1632662607kitchen-banner.png')}}" alt="" class="mobile-banner "> 
          </a>
       </div>
    </div>
@@ -14350,134 +11908,61 @@
                            <h2 class="section-title">
                               TRENDING COLLECTION
                            </h2>
-                           <a href="//localhost/oracle_old/products/filter/trending" class="link">View All</a>
+                           <a href="#" class="link">View All</a>
                         </div>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-12 rem-padding">
-                        <div class="item-slider-childcategories owl-carousel owl-theme owl-responsive-1200 owl-loaded">
-                                                      
-                                                      
-                                                      
-                                                      
-                                                      
-                                                      
-                                                   <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1330px, 0px, 0px); transition: all 0s ease 0s; width: 3990.01px;"><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Shampoo-and-Conditioner" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440904Shampoo&amp;Conditioner.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Makeup-Bags-and-Cases" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440816Makeupbags.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Power-Tools" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440860PowerTools.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Fitness-Technology" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439676FitnessTechnology.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/athletic-shoes" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440994SportsShoes.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/headphones" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439743Headphones.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Shampoo-and-Conditioner" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440904Shampoo&amp;Conditioner.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Makeup-Bags-and-Cases" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440816Makeupbags.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Power-Tools" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440860PowerTools.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Fitness-Technology" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439676FitnessTechnology.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/athletic-shoes" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440994SportsShoes.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item active" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/headphones" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439743Headphones.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Shampoo-and-Conditioner" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440904Shampoo&amp;Conditioner.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Makeup-Bags-and-Cases" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440816Makeupbags.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Power-Tools" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440860PowerTools.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/Fitness-Technology" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439676FitnessTechnology.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/athletic-shoes" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654440994SportsShoes.jpg" alt="">
-        
-    </div>
-</a></div><div class="owl-item cloned" style="width: 211.667px; margin-right: 10px;"><a href="//localhost/oracle_old/products/subcategories/headphones" class="single-category item">
-    <div class="item-img">
-        <img class="img-fluid" src="//localhost/oracle_old/assets/images/childcategories/1654439743Headphones.jpg" alt="">
-        
-    </div>
-</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-chevron-left"></i></div><div class="owl-next" style=""><i class="fa fa-chevron-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                        <div class="item-slider-childcategories">
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+                           <a href="#" class="single-category item">
+                               <div class="item-img">
+                                   <img class="img-fluid" src="{{asset('asset_old/images/childcategories/1654440816Makeupbags.jpg')}}" alt="">
+                               </div>
+                           </a>
+
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
-
-   <!-- 18 secton 10% Discount banner 19 sectio Best of fashion banner   -->
-   <div class="container">
-      <div class="row">
-                  <div class="hownew-banner col-lg-12">
-            <a href="">
-               <img src="//localhost/oracle_old/assets/images/banners/1645877453discount.png" alt="" class="desktop-banner w-100">
-               <img src="//localhost/oracle_old/assets/images/banners/1645877453discount.png" alt="" class="mobile-banner w-100"> 
-            </a>
-         </div>
-                           <div class="hownew-banner col-lg-12">
-            <a href="">
-               <img src="//localhost/oracle_old/assets/images/banners/1645877521bestof.png" alt="" class="desktop-banner w-100">
-               <img src="//localhost/oracle_old/assets/images/banners/1645877521bestof.png" alt="" class="mobile-banner w-100"> 
-            </a>
-         </div>
-               </div>
    </div>
 </section>
 
@@ -14491,7 +11976,7 @@
 					<h2 class="section-title">
 					AUCTION PRODUCTS
 					</h2>
-					<a href="//localhost/oracle_old/auction" class="link">View All</a>
+					<a href="#" class="link">View All</a>
 				</div>
 			</div>
 		</div>
@@ -14499,634 +11984,134 @@
 		<div class="row mt-3">
 			<div class="col-lg-12 rem-padding">
 				<div class="container">
-					<div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-										
-
-
-
-																		
-
-
-
-																		
-
-
-
-																		
-
-
-
-																		
-
-
-
-																		
-
-
-
-																		
-
-
-
-																		
-
-
-
-																		<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1320px, 0px, 0px); transition: all 0s ease 0s; width: 4752px;"><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-5la0446nr0" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1621788028MdDsO4oR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-nup7753sog" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1655120325Niz9LD0q.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/microwave-4ya2707ln2" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16090828588tHsRfHG.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$14.08 <del><small></small></del></h4>
-
-														<h5 class="name">microwave</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/live-stream-pbm861061kfffffff" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/160787906720BF8uec.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$84.49 <del><small></small></del></h4>
-
-														<h5 class="name">live stream</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/ashok-test-cfr8627ywi" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1606928793R7zTeRIe.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$102.04 <del><small></small></del></h4>
-
-														<h5 class="name">ashok test</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-yfv0473xhc" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1654450972mJk4Vbhr.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-q6m0472t5f" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16551263438RBWaxZ3.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-hxg04538ql" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1621788028MdDsO4oR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-5la0446nr0" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1621788028MdDsO4oR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-nup7753sog" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1655120325Niz9LD0q.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/microwave-4ya2707ln2" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16090828588tHsRfHG.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$14.08 <del><small></small></del></h4>
-
-														<h5 class="name">microwave</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/live-stream-pbm861061kfffffff" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/160787906720BF8uec.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$84.49 <del><small></small></del></h4>
-
-														<h5 class="name">live stream</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/ashok-test-cfr8627ywi" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1606928793R7zTeRIe.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$102.04 <del><small></small></del></h4>
-
-														<h5 class="name">ashok test</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-yfv0473xhc" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1654450972mJk4Vbhr.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-q6m0472t5f" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/16551263438RBWaxZ3.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-hxg04538ql" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1621788028MdDsO4oR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-new-auction-product-5la0446nr0" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1621788028MdDsO4oR.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/auction-item/new-auction-product-nup7753sog" class="item">
-
-											<div class="item-img">
-
-												
-												
-
-												<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1655120325Niz9LD0q.jpg" alt="">
-
-											</div>
-
-											<div class="info">
-
-												<div class="stars">
-
-                                                  <div class="ratings">
-
-                                                      <div class="empty-stars"></div>
-
-                                                      <div class="full-stars" style="width:0%"></div>
-
-                                                  </div>
-
-												</div>
-
-												<h4 class="price">$28.16 <del><small></small></del></h4>
-
-														<h5 class="name">New Auction Product</h5>
-
-														
-
-											</div>
-
-										</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+					<div class="trending-item-slider">
+               
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
+
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
+
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+
+               </div>
 				</div>
 			</div>
 		</div>
@@ -15134,8 +12119,9 @@
 
 
 <!-- 21 section -->
+
 <section class="hot-and-new-item mt-4">
-	
+   <!-- sale products -->
       <div class="container">
          <div class="row">
             <div class="col-lg-12 rem-padding">
@@ -15143,13 +12129,11 @@
                <div class="section-top">
 
                   <h2 class="section-title">
-
-                     
                      Premium Product
 
                   </h2>
 
-                  <a href="//localhost/oracle_old/products/filter/premium" class="link">View All</a>
+                  <a href="#" class="link">View All</a>
 
                </div>
 
@@ -15158,231 +12142,172 @@
          <div class="row"> 
             
             <div class="col-lg-12">
-               <div class="row">
-
-                                       <div class="col-lg-3 col-md-3 col-6 five-colm ">
-			<a class="item" href="//localhost/oracle_old/item/simple-product-example-79899156009">
-			
-
-				<div class="item-img">
-
-				
-						
-
-					<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1632576897BjVaOf0E.jpg" alt="">
-
-				</div>
-
-				<div class="info">
-
-					<div class="stars">
-
-						<div class="ratings">
-
-							<div class="empty-stars"></div>
-
-								<div class="full-stars" style="width:0%"></div>
-
-							</div>
-
-					</div>
-
-					<h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
-
-					<h5 class="name">Simple Product Example</h5>
-
-					
-
-				</div>
-
-			</a>
-
-</div>                                       <div class="col-lg-3 col-md-3 col-6 five-colm ">
-			<a class="item" href="//localhost/oracle_old/item/belle-of-the-ball-glamour-makeup-mirror-gmm-m-bb-md-new">
-			
-
-				<div class="item-img">
-
-				
-						
-
-					<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631348956TNsREXFD.jpg" alt="">
-
-				</div>
-
-				<div class="info">
-
-					<div class="stars">
-
-						<div class="ratings">
-
-							<div class="empty-stars"></div>
-
-								<div class="full-stars" style="width:0%"></div>
-
-							</div>
-
-					</div>
-
-					<h4 class="price">$702.7 <del><small>$702.7</small></del></h4>
-
-					<h5 class="name">Belle of the Ball - Glamour Makeup Mirror</h5>
-
-					
-
-				</div>
-
-			</a>
-
-</div>                                       <div class="col-lg-3 col-md-3 col-6 five-colm ">
-			<a class="item" href="//localhost/oracle_old/item/ali-worn-trunks-ali-worn-trunks-new">
-			
-
-				<div class="item-img">
-
-				
-						
-
-					<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631346035Alt7AlGF.jpg" alt="">
-
-				</div>
-
-				<div class="info">
-
-					<div class="stars">
-
-						<div class="ratings">
-
-							<div class="empty-stars"></div>
-
-								<div class="full-stars" style="width:0%"></div>
-
-							</div>
-
-					</div>
-
-					<h4 class="price">$56.33 <del><small></small></del></h4>
-
-					<h5 class="name">Ali Worn Trunks</h5>
-
-					
-
-				</div>
-
-			</a>
-
-</div>                                       <div class="col-lg-3 col-md-3 col-6 five-colm ">
-			<a class="item" href="//localhost/oracle_old/item/beauty-lux-travel-case-gmm-ca-1">
-			
-
-				<div class="item-img">
-
-				
-						
-
-					<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1631337540o6bRx1vS.jpg" alt="">
-
-				</div>
-
-				<div class="info">
-
-					<div class="stars">
-
-						<div class="ratings">
-
-							<div class="empty-stars"></div>
-
-								<div class="full-stars" style="width:0%"></div>
-
-							</div>
-
-					</div>
-
-					<h4 class="price">$378.81 <del><small>$378.81</small></del></h4>
-
-					<h5 class="name">Beauty Lux Travel Case</h5>
-
-					
-
-				</div>
-
-			</a>
-
-</div>                                       <div class="col-lg-3 col-md-3 col-6 five-colm ">
-			<a class="item" href="//localhost/oracle_old/item/asics-footwear-from-30-off-suz2059q2f">
-			
-
-				<div class="item-img">
-
-				
-						
-
-					<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1629012242DDvGUt5w.jpg" alt="">
-
-				</div>
-
-				<div class="info">
-
-					<div class="stars">
-
-						<div class="ratings">
-
-							<div class="empty-stars"></div>
-
-								<div class="full-stars" style="width:0%"></div>
-
-							</div>
-
-					</div>
-
-					<h4 class="price">$70.41 <del><small></small></del></h4>
-
-					<h5 class="name">Asics Footwear From 30% Off</h5>
-
-					
-
-				</div>
-
-			</a>
-
-</div>                                       <div class="col-lg-3 col-md-3 col-6 five-colm ">
-			<a class="item" href="//localhost/oracle_old/item/pigeon-by-stovekraft-basics-aluminium-non-stick-cookware-set-set-of-3-with-one-lid-pink-9083205m2h">
-			
-
-				<div class="item-img">
-
-				
-						
-
-					<img class="img-fluid" src="//localhost/oracle_old/assets/images/thumbnails/1625303336Q9gjbHZL.jpg" alt="">
-
-				</div>
-
-				<div class="info">
-
-					<div class="stars">
-
-						<div class="ratings">
-
-							<div class="empty-stars"></div>
-
-								<div class="full-stars" style="width:0%"></div>
-
-							</div>
-
-					</div>
-
-					<h4 class="price">$21.12 <del><small></small></del></h4>
-
-					<h5 class="name">Pigeon by Stovekraft Basics Aluminium Non-stick Cookwar...</h5>
-
-					
-
-				</div>
-
-			</a>
-
-</div>                  
+               <div class="row"> 
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-6 five-colm ">
+                     <a class="item" href="#">
+                        <div class="item-img">
+                           <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1632576897BjVaOf0E.jpg')}}" alt="">
+                        </div>
+
+                        <div class="info">
+                           <div class="stars">
+                              <div class="ratings">
+                                 <div class="empty-stars"></div>
+                                    <div class="full-stars" style="width:0%"></div>
+                                 </div>
+                           </div>
+                           <h4 class="price">$19.72 <del><small>$19.72</small></del></h4>
+                           <h5 class="name">Simple Product Example</h5>
+                        </div>
+                     </a>
+                  </div>
                </div>
             </div>
          </div>
@@ -15390,9 +12315,12 @@
 
    </section>
 
+
+
+
    <!-- section 22 Popular Category Slider  -->
 
-   <section class="hot-and-new-item pt-2">
+<section class="hot-and-new-item pt-2">
    <div class="container">
       <div class="row">
          <div class="col-lg-12 rem-padding">
@@ -15400,132 +12328,74 @@
                <h2 class="section-title">
                   Popular categories
                </h2>
-               
             </div>
          </div>
       </div>
       <div class="row">
          <div class="col-lg-12 rem-padding">
-            <div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-                              
-                              
-                              
-                              
-                              
-                              
-                           <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2112px, 0px, 0px); transition: all 0.8s ease 0s; width: 4224px;"><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/toys-and-games/baby-and-toddler-toys" class="single-category">
+            <div class="trending-item-slider">
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1634812109Baby toddler.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Baby &amp; Toddler Toys</h4>
-                  </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/home-and-garden/wall-art" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1635152055wall art.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Wall Art</h4>
-                  </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/health-beauty/natural-and-alternative-remedies" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636048868Natural &amp; Alternative Remedies.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Natural &amp; Alternative Remedies</h4>
-                  </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/kids/Kids-Furniture" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636049670Kid's Furniture.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Kid's Furniture</h4>
-                  </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/furniture/Nursery-Furniture" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636049687Nursery Furniture.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
                      <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div><div class="owl-item" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/fashion/womens-clothing" class="single-category">
+               </a>
+
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1635409091women's clothing.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Women's Clothing</h4>
-                  </div>
-               </a></div><div class="owl-item" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/toys-and-games/baby-and-toddler-toys" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1634812109Baby toddler.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Baby &amp; Toddler Toys</h4>
-                  </div>
-               </a></div><div class="owl-item" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/home-and-garden/wall-art" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1635152055wall art.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Wall Art</h4>
-                  </div>
-               </a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/health-beauty/natural-and-alternative-remedies" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636048868Natural &amp; Alternative Remedies.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Natural &amp; Alternative Remedies</h4>
-                  </div>
-               </a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/kids/Kids-Furniture" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636049670Kid's Furniture.jpg" alt="">
-                  </div>
-                  <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Kid's Furniture</h4>
-                  </div>
-               </a></div><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/furniture/Nursery-Furniture" class="single-category">
-                  <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636049687Nursery Furniture.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
                      <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div><div class="owl-item cloned active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/fashion/womens-clothing" class="single-category">
+               </a>
+
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1635409091women's clothing.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Women's Clothing</h4>
+                     <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div><div class="owl-item cloned active" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/toys-and-games/baby-and-toddler-toys" class="single-category">
+               </a>
+
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1634812109Baby toddler.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Baby &amp; Toddler Toys</h4>
+                     <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/home-and-garden/wall-art" class="single-category">
+               </a>
+
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1635152055wall art.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Wall Art</h4>
+                     <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/health-beauty/natural-and-alternative-remedies" class="single-category">
+               </a>
+
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636048868Natural &amp; Alternative Remedies.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Natural &amp; Alternative Remedies</h4>
+                     <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div><div class="owl-item cloned" style="width: 264px; margin-right: 0px;"><a href="//localhost/oracle_old/category/kids/Kids-Furniture" class="single-category">
+               </a>
+               <a href="#" class="single-category">
                   <div class="item-img p-1">
-                     <img class="img-fluid" src="//localhost/oracle_old/assets/images/subcategories/1636049670Kid's Furniture.jpg" alt="">
+                     <img class="img-fluid" src="{{ asset('asset_old/images/subcategories/1636049687Nursery Furniture.jpg') }}" alt="">
                   </div>
                   <div class="bottomright d-flex flex-column align-items-center justify-content-center text-center">
-                     <h4 class="blog_title">Kid's Furniture</h4>
+                     <h4 class="blog_title">Nursery Furniture</h4>
                   </div>
-               </a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
+               </a>
+            </div>
          </div>
       </div>
    </div>
@@ -15546,73 +12416,73 @@
         <div class="row g-3">
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289583p1.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289583p1.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289601p2.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289601p2.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289608p3.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289608p3.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289614p4.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289614p4.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289621p5.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289621p5.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289627p6.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289627p6.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289634p7.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289634p7.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289642p8.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289642p8.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289650p9.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289650p9.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289657p10.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289657p10.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289669p12.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289669p12.jpg')}}" style="">
 
                 </div>
             </div>
                         <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
                 <div class="simple-service">
-                    <img class="lazy" alt="" src="http://localhost/oracle-marketplace/assets/images/partner/1571289675p13.jpg" style="">
+                    <img class="lazy" alt="" src="{{asset('assets/images/partner/1571289675p13.jpg')}}" style="">
 
                 </div>
             </div>
@@ -15636,46 +12506,127 @@
          </div>
          <div class="row">
             <div class="col-lg-12 rem-padding">
-               <div class="trending-item-slider owl-carousel owl-theme owl-loaded">
-                                    
-																				
+               <div class="trending-item-slider">
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
-								                                 <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 264px;"><div class="owl-item active" style="width: 264px; margin-right: 0px;"><a href="//devfo.pauldaughters.com/category/health-beauty/personal-care" class="item">
-										
-											<div class="item-img">
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-												
-													
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
-												<img class="img-fluid" src="//devfo.pauldaughters.com/assets/images/thumbnails/1631348956TNsREXFD.jpg" alt="">
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-											</div>
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
-											<div class="info">
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-												<div class="stars">
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
-                                                  <div class="ratings">
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-                                                      <div class="empty-stars"></div>
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
-                                                      <div class="full-stars" style="width:0%"></div>
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-                                                  </div>
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+                  <a href="#" class="item">
+                     <div class="item-img">
+                        <img class="img-fluid" src="{{asset('asset_old/images/thumbnails/1654450972mJk4Vbhr.jpg') }}" alt="">
+                     </div>
 
-												</div>
+                     <div class="info">
+                        <div class="stars">
+                          <div class="ratings">
+                              <div class="empty-stars"></div>
+                              <div class="full-stars" style="width:0%"></div>
+                          </div>
 
-												<h4 class="price">$702.7 <del><small>$702.7</small></del></h4>
-
-														<h5 class="name">Belle of the Ball - Glamour Makeup Mirror</h5>
-
-														
-
-											</div>
-
-										</a></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style=""><i class="fa fa-angle-left"></i></div><div class="owl-next" style=""><i class="fa fa-angle-right"></i></div></div><div class="owl-dots" style=""><div class="owl-dot active"><span></span></div></div></div></div>
+                        </div>
+                        <h4 class="price">$176.03 <del><small>$323.89</small></del></h4>
+                        <h5 class="name">Physical Product Title Title will Be Here 102</h5>  
+                     </div>
+                  </a>
+               </div>
             </div>
          </div>
       </div>

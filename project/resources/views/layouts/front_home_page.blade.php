@@ -63,6 +63,7 @@
 
     <link rel="stylesheet" href="{{asset('asset_old/front/css/auction.css')}}">
 
+
     @if(!empty($seo->google_analytics))
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -116,7 +117,7 @@
                             <div class="list">
                                 <ul>
                                                                         <li class="login">
-                                        <a href="//localhost/oracle_old/user/login" class="sign-log">
+                                        <a href="#" class="sign-log">
                                             <div class="links">
                                                 <span class="sign-in">Sign in</span> <span>|</span>
                                                 <span class="join">Join</span>
@@ -145,8 +146,8 @@
             <div class="row ">
                 <div class="col-lg-2 col-sm-6 col-5 remove-padding">
                     <div class="logo">
-                        <a href="//localhost/oracle_old">
-                            <img src="//localhost/oracle_old/assets/images/1611727654oracle_logo.png" alt="">
+                        <a href="#">
+                            <img src="{{asset('asset_old/images/1611727654oracle_logo.png')}}" alt="">
                         </a>
                     </div>
                 </div>
@@ -173,7 +174,7 @@
                                                                     </select>
                             </div>
 
-                            <form id="searchForm" class="search-form" action="//localhost/oracle_old/category" method="GET">
+                            <form id="searchForm" class="search-form" action="#" method="GET">
                                                                                                                                 <input type="text" id="prod_name" name="search" placeholder="Search For Product" value="" autocomplete="off">
                                 <div class="autocomplete">
                                   <div id="myInputautocomplete-list" class="autocomplete-items">
@@ -206,7 +207,7 @@
                                     </a>
                                                             </li>
                             <li class="compare" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare">
-                                <a href="//localhost/oracle_old/item/compare/view" class="wish compare-product">
+                                <a href="#" class="wish compare-product">
                                     <div class="icon">
                                         <i class="fas fa-exchange-alt"></i>
                                         <span id="compare-count">0</span>
@@ -236,7 +237,7 @@
                                                                 
                                 <li class="dropdown_list ">
                                                                     <div class="img">
-                                        <img src="//localhost/oracle_old/assets/images/categories/1557807287light.png" alt="">
+                                        <img src="{{asset('assets/images/categories/1557807287light.png')}}" alt="">
                                     </div>
                                     <div class="link-area">
                                         <span><a href="//localhost/oracle_old/products/subcategories/electric">Electronic</a></span>
